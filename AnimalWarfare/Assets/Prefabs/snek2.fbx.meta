@@ -1,0 +1,300 @@
+fileFormatVersion: 2
+guid: adf53d486802d9e48a51f5e7e25b7d85
+timeCreated: 1521202680
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: BN_Head
+    100002: BN_Jaw
+    100004: BN_Neck
+    100006: BN_Spline_01
+    100008: BN_Spline_02
+    100010: BN_Spline_03
+    100012: BN_Spline_04
+    100014: BN_Spline_05
+    100016: BN_Spline_06
+    100018: BN_Tail_01
+    100020: BN_Tail_02
+    100022: BN_Tail_03
+    100024: BN_Tail_04
+    100026: BN_Tail_05
+    100028: BN_Tail_06
+    100030: BN_Tail_07
+    100032: BN_Tail_08
+    100034: BN_Tail_09
+    100036: BN_Tail_10
+    100038: BN_Tail_11
+    100040: BN_Tail_12
+    100042: BN_Tail_13
+    100044: BN_Tail_13_end
+    100046: BN_Tone_01
+    100048: BN_Tone_02
+    100050: BN_Tone_03
+    100052: BN_Tone_04
+    100054: BN_Tone_04_end
+    100056: die2
+    100058: piratecat_anaconda.qc_skeleton
+    100060: piratecat_anaconda_anaconda
+    100062: //RootNode
+    400000: BN_Head
+    400002: BN_Jaw
+    400004: BN_Neck
+    400006: BN_Spline_01
+    400008: BN_Spline_02
+    400010: BN_Spline_03
+    400012: BN_Spline_04
+    400014: BN_Spline_05
+    400016: BN_Spline_06
+    400018: BN_Tail_01
+    400020: BN_Tail_02
+    400022: BN_Tail_03
+    400024: BN_Tail_04
+    400026: BN_Tail_05
+    400028: BN_Tail_06
+    400030: BN_Tail_07
+    400032: BN_Tail_08
+    400034: BN_Tail_09
+    400036: BN_Tail_10
+    400038: BN_Tail_11
+    400040: BN_Tail_12
+    400042: BN_Tail_13
+    400044: BN_Tail_13_end
+    400046: BN_Tone_01
+    400048: BN_Tone_02
+    400050: BN_Tone_03
+    400052: BN_Tone_04
+    400054: BN_Tone_04_end
+    400056: die2
+    400058: piratecat_anaconda.qc_skeleton
+    400060: piratecat_anaconda_anaconda
+    400062: //RootNode
+    2100000: anaconda_skin
+    4300000: piratecat_anaconda_anaconda
+    7400000: piratecat_anaconda.qc_skeleton|piratecat_anaconda_anim_@attack1
+    7400002: piratecat_anaconda.qc_skeleton|piratecat_anaconda_anim_@die
+    7400004: piratecat_anaconda.qc_skeleton|piratecat_anaconda_anim_@idle
+    7400006: piratecat_anaconda.qc_skeleton|piratecat_anaconda_anim_@run
+    7400008: piratecat_anaconda.qc_skeleton|piratecat_anaconda_anim_@walk
+    9500000: //RootNode
+    13700000: piratecat_anaconda_anaconda
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: piratecat_anaconda.qc_skeleton|piratecat_anaconda_anim_@attack1
+      takeName: piratecat_anaconda.qc_skeleton|piratecat_anaconda_anim_@attack1
+      firstFrame: 0
+      lastFrame: 78
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: piratecat_anaconda.qc_skeleton|piratecat_anaconda_anim_@die
+      takeName: piratecat_anaconda.qc_skeleton|piratecat_anaconda_anim_@die
+      firstFrame: 0
+      lastFrame: 150
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: piratecat_anaconda.qc_skeleton|piratecat_anaconda_anim_@idle
+      takeName: piratecat_anaconda.qc_skeleton|piratecat_anaconda_anim_@idle
+      firstFrame: 0
+      lastFrame: 200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: piratecat_anaconda.qc_skeleton|piratecat_anaconda_anim_@run
+      takeName: piratecat_anaconda.qc_skeleton|piratecat_anaconda_anim_@run
+      firstFrame: 0
+      lastFrame: 150
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: piratecat_anaconda.qc_skeleton|piratecat_anaconda_anim_@walk
+      takeName: piratecat_anaconda.qc_skeleton|piratecat_anaconda_anim_@walk
+      firstFrame: 0
+      lastFrame: 150
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
