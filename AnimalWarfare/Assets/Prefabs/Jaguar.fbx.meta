@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: ad7971f3256c61c4dade035fcaccddb7
-timeCreated: 1521118668
+guid: 1005072d5006138488553a3d84e39eec
+timeCreated: 1521200412
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -46,7 +46,7 @@ ModelImporter:
     100076: BN_Eye_L_01_end
     100078: BN_Eye_R_01
     100080: BN_Eye_R_01_end
-    100082: BN_Mouth_01
+    100082: BN_Mouth_0
     100084: BN_Tail_01
     100086: BN_Tail_02
     100088: BN_Tail_03
@@ -55,10 +55,10 @@ ModelImporter:
     100094: BN_Tongue_01
     100096: BN_Tongue_02
     100098: BN_Tongue_02_end
-    100100: //RootNode
-    100102: LionessModel
-    100104: Skeleton
-    100106: walk
+    100100: Jaguar
+    100102: //RootNode
+    100104: JaguarModel
+    100106: Skeleton
     400000: Bip01_Head
     400002: Bip01_L_Calf
     400004: Bip01_L_Clavicle
@@ -100,7 +100,7 @@ ModelImporter:
     400076: BN_Eye_L_01_end
     400078: BN_Eye_R_01
     400080: BN_Eye_R_01_end
-    400082: BN_Mouth_01
+    400082: BN_Mouth_0
     400084: BN_Tail_01
     400086: BN_Tail_02
     400088: BN_Tail_03
@@ -110,25 +110,20 @@ ModelImporter:
     400096: BN_Tongue_02
     400098: BN_Tongue_02_end
     400100: //RootNode
-    400102: LionessModel
-    400104: Skeleton
-    400106: walk
-    2100000: lionf_skin
-    4300000: LionessModel
-    7400000: Skeleton|piratecat_lionf_anim_@attack1
-    7400002: Skeleton|piratecat_lionf_anim_@attack1.001
-    7400004: Skeleton|piratecat_lionf_anim_@die
-    7400006: Skeleton|piratecat_lionf_anim_@die.001
-    7400008: Skeleton|piratecat_lionf_anim_@idle
-    7400010: Skeleton|piratecat_lionf_anim_@idle.001
-    7400012: Skeleton|piratecat_lionf_anim_@idle_inactive
-    7400014: Skeleton|piratecat_lionf_anim_@idle_inactive.001
-    7400016: Skeleton|piratecat_lionf_anim_@run
-    7400018: Skeleton|piratecat_lionf_anim_@run.001
-    7400020: Skeleton|piratecat_lionf_anim_@walk
-    7400022: Skeleton|piratecat_lionf_anim_@walk.001
+    400102: Jaguar
+    400104: JaguarModel
+    400106: Skeleton
+    2100000: jaguar_skin
+    4300000: JaguarModel
+    7400000: Skeleton|piratecat_jaguar_anim_@attack1
+    7400002: Skeleton|piratecat_jaguar_anim_@attack2
+    7400004: Skeleton|piratecat_jaguar_anim_@die
+    7400006: Skeleton|piratecat_jaguar_anim_@idle
+    7400008: Skeleton|piratecat_jaguar_anim_@idle_inactive
+    7400010: Skeleton|piratecat_jaguar_anim_@run
+    7400012: Skeleton|piratecat_jaguar_anim_@walk
     9500000: //RootNode
-    13700000: LionessModel
+    13700000: JaguarModel
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -157,8 +152,36 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Skeleton|piratecat_lionf_anim_@attack1
-      takeName: Skeleton|piratecat_lionf_anim_@attack1
+      name: Skeleton|piratecat_jaguar_anim_@attack1
+      takeName: Skeleton|piratecat_jaguar_anim_@attack1
+      firstFrame: 0
+      lastFrame: 71
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Skeleton|piratecat_jaguar_anim_@attack2
+      takeName: Skeleton|piratecat_jaguar_anim_@attack2
       firstFrame: 0
       lastFrame: 71
       wrapMode: 0
@@ -185,10 +208,10 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_lionf_anim_@die
-      takeName: Skeleton|piratecat_lionf_anim_@die
+      name: Skeleton|piratecat_jaguar_anim_@die
+      takeName: Skeleton|piratecat_jaguar_anim_@die
       firstFrame: 0
-      lastFrame: 90
+      lastFrame: 105
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -213,17 +236,17 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_lionf_anim_@idle
-      takeName: Skeleton|piratecat_lionf_anim_@idle
+      name: Skeleton|piratecat_jaguar_anim_@idle
+      takeName: Skeleton|piratecat_jaguar_anim_@idle
       firstFrame: 0
-      lastFrame: 74
+      lastFrame: 119
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -241,8 +264,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_lionf_anim_@idle_inactive
-      takeName: Skeleton|piratecat_lionf_anim_@idle_inactive
+      name: Skeleton|piratecat_jaguar_anim_@idle_inactive
+      takeName: Skeleton|piratecat_jaguar_anim_@idle_inactive
       firstFrame: 0
       lastFrame: 300
       wrapMode: 0
@@ -269,10 +292,10 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_lionf_anim_@run
-      takeName: Skeleton|piratecat_lionf_anim_@run
+      name: Skeleton|piratecat_jaguar_anim_@run
+      takeName: Skeleton|piratecat_jaguar_anim_@run
       firstFrame: 0
-      lastFrame: 36
+      lastFrame: 33
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -297,10 +320,10 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_lionf_anim_@walk
-      takeName: Skeleton|piratecat_lionf_anim_@walk
+      name: Skeleton|piratecat_jaguar_anim_@walk
+      takeName: Skeleton|piratecat_jaguar_anim_@walk
       firstFrame: 0
-      lastFrame: 99
+      lastFrame: 30
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

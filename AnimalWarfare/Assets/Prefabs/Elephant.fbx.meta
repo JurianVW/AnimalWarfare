@@ -1,83 +1,125 @@
 fileFormatVersion: 2
-guid: adf53d486802d9e48a51f5e7e25b7d85
-timeCreated: 1521202680
+guid: 855b7803decc5474bb9e09548742673e
+timeCreated: 1521198824
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: BN_Head
-    100002: BN_Jaw
-    100004: BN_Neck
-    100006: BN_Spline_01
-    100008: BN_Spline_02
-    100010: BN_Spline_03
-    100012: BN_Spline_04
-    100014: BN_Spline_05
-    100016: BN_Spline_06
-    100018: BN_Tail_01
-    100020: BN_Tail_02
-    100022: BN_Tail_03
-    100024: BN_Tail_04
-    100026: BN_Tail_05
-    100028: BN_Tail_06
-    100030: BN_Tail_07
-    100032: BN_Tail_08
-    100034: BN_Tail_09
-    100036: BN_Tail_10
-    100038: BN_Tail_11
-    100040: BN_Tail_12
-    100042: BN_Tail_13
-    100044: BN_Tail_13_end
-    100046: BN_Tone_01
-    100048: BN_Tone_02
-    100050: BN_Tone_03
-    100052: BN_Tone_04
-    100054: BN_Tone_04_end
-    100056: die2
-    100058: piratecat_anaconda.qc_skeleton
-    100060: piratecat_anaconda_anaconda
-    100062: //RootNode
-    400000: BN_Head
-    400002: BN_Jaw
-    400004: BN_Neck
-    400006: BN_Spline_01
-    400008: BN_Spline_02
-    400010: BN_Spline_03
-    400012: BN_Spline_04
-    400014: BN_Spline_05
-    400016: BN_Spline_06
-    400018: BN_Tail_01
-    400020: BN_Tail_02
-    400022: BN_Tail_03
-    400024: BN_Tail_04
-    400026: BN_Tail_05
-    400028: BN_Tail_06
-    400030: BN_Tail_07
-    400032: BN_Tail_08
-    400034: BN_Tail_09
-    400036: BN_Tail_10
-    400038: BN_Tail_11
-    400040: BN_Tail_12
-    400042: BN_Tail_13
-    400044: BN_Tail_13_end
-    400046: BN_Tone_01
-    400048: BN_Tone_02
-    400050: BN_Tone_03
-    400052: BN_Tone_04
-    400054: BN_Tone_04_end
-    400056: die2
-    400058: piratecat_anaconda.qc_skeleton
-    400060: piratecat_anaconda_anaconda
-    400062: //RootNode
-    2100000: anaconda_skin
-    4300000: piratecat_anaconda_anaconda
-    7400000: piratecat_anaconda.qc_skeleton|piratecat_anaconda_anim_@attack1
-    7400002: piratecat_anaconda.qc_skeleton|piratecat_anaconda_anim_@die
-    7400004: piratecat_anaconda.qc_skeleton|piratecat_anaconda_anim_@idle
-    7400006: piratecat_anaconda.qc_skeleton|piratecat_anaconda_anim_@run
-    7400008: piratecat_anaconda.qc_skeleton|piratecat_anaconda_anim_@walk
+    100000: Bip01_Head
+    100002: Bip01_L_Calf
+    100004: Bip01_L_Clavicle
+    100006: Bip01_L_Foot
+    100008: Bip01_L_Foot_end
+    100010: Bip01_L_Forearm
+    100012: Bip01_L_Hand
+    100014: Bip01_L_Hand_end
+    100016: Bip01_L_Thigh
+    100018: Bip01_L_UpperArm
+    100020: Bip01_Neck
+    100022: Bip01_Pelvis
+    100024: Bip01_R_Calf
+    100026: Bip01_R_Clavicle
+    100028: Bip01_R_Foot
+    100030: Bip01_R_Foot_end
+    100032: Bip01_R_Forearm
+    100034: Bip01_R_Hand
+    100036: Bip01_R_Hand_end
+    100038: Bip01_R_Thigh
+    100040: Bip01_R_UpperArm
+    100042: Bip01_Spine
+    100044: Bip01_Spine1
+    100046: Bip01_Spine2
+    100048: BN_Ear_L_01
+    100050: BN_Ear_L_02
+    100052: BN_Ear_L_02_end
+    100054: BN_Ear_R_01
+    100056: BN_Ear_R_02
+    100058: BN_Ear_R_02_end
+    100060: BN_Eyebrow_L
+    100062: BN_Eyebrow_L_end
+    100064: BN_Eyebrow_R
+    100066: BN_Eyebrow_R_end
+    100068: BN_Mouth_01
+    100070: BN_Mouth_01_end
+    100072: BN_Nose_01
+    100074: BN_Nose_02
+    100076: BN_Nose_03
+    100078: BN_Nose_04
+    100080: BN_Nose_05
+    100082: BN_Nose_06
+    100084: BN_Nose_06_end
+    100086: BN_Tail_01
+    100088: BN_Tail_02
+    100090: BN_Tail_03
+    100092: BN_Tail_04
+    100094: BN_Tail_04_end
+    100096: //RootNode
+    100098: Elephant
+    100100: ElephantModel
+    100102: Skeleton
+    400000: Bip01_Head
+    400002: Bip01_L_Calf
+    400004: Bip01_L_Clavicle
+    400006: Bip01_L_Foot
+    400008: Bip01_L_Foot_end
+    400010: Bip01_L_Forearm
+    400012: Bip01_L_Hand
+    400014: Bip01_L_Hand_end
+    400016: Bip01_L_Thigh
+    400018: Bip01_L_UpperArm
+    400020: Bip01_Neck
+    400022: Bip01_Pelvis
+    400024: Bip01_R_Calf
+    400026: Bip01_R_Clavicle
+    400028: Bip01_R_Foot
+    400030: Bip01_R_Foot_end
+    400032: Bip01_R_Forearm
+    400034: Bip01_R_Hand
+    400036: Bip01_R_Hand_end
+    400038: Bip01_R_Thigh
+    400040: Bip01_R_UpperArm
+    400042: Bip01_Spine
+    400044: Bip01_Spine1
+    400046: Bip01_Spine2
+    400048: BN_Ear_L_01
+    400050: BN_Ear_L_02
+    400052: BN_Ear_L_02_end
+    400054: BN_Ear_R_01
+    400056: BN_Ear_R_02
+    400058: BN_Ear_R_02_end
+    400060: BN_Eyebrow_L
+    400062: BN_Eyebrow_L_end
+    400064: BN_Eyebrow_R
+    400066: BN_Eyebrow_R_end
+    400068: BN_Mouth_01
+    400070: BN_Mouth_01_end
+    400072: BN_Nose_01
+    400074: BN_Nose_02
+    400076: BN_Nose_03
+    400078: BN_Nose_04
+    400080: BN_Nose_05
+    400082: BN_Nose_06
+    400084: BN_Nose_06_end
+    400086: BN_Tail_01
+    400088: BN_Tail_02
+    400090: BN_Tail_03
+    400092: BN_Tail_04
+    400094: BN_Tail_04_end
+    400096: //RootNode
+    400098: Elephant
+    400100: ElephantModel
+    400102: Skeleton
+    2100000: elephant_skin
+    4300000: ElephantModel
+    7400000: Skeleton|piratecat_elephant_anim_@attack1
+    7400002: Skeleton|piratecat_elephant_anim_@attack2
+    7400004: Skeleton|piratecat_elephant_anim_@die
+    7400006: Skeleton|piratecat_elephant_anim_@idle
+    7400008: Skeleton|piratecat_elephant_anim_@idle_inactive
+    7400010: Skeleton|piratecat_elephant_anim_@run
+    7400012: Skeleton|piratecat_elephant_anim_@walk
     9500000: //RootNode
-    13700000: piratecat_anaconda_anaconda
+    13700000: ElephantModel
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -106,10 +148,94 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: piratecat_anaconda.qc_skeleton|piratecat_anaconda_anim_@attack1
-      takeName: piratecat_anaconda.qc_skeleton|piratecat_anaconda_anim_@attack1
+      name: Skeleton|piratecat_elephant_anim_@attack1
+      takeName: Skeleton|piratecat_elephant_anim_@attack1
       firstFrame: 0
-      lastFrame: 78
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Skeleton|piratecat_elephant_anim_@attack2
+      takeName: Skeleton|piratecat_elephant_anim_@attack2
+      firstFrame: 0
+      lastFrame: 74
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Skeleton|piratecat_elephant_anim_@die
+      takeName: Skeleton|piratecat_elephant_anim_@die
+      firstFrame: 0
+      lastFrame: 177
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Skeleton|piratecat_elephant_anim_@idle
+      takeName: Skeleton|piratecat_elephant_anim_@idle
+      firstFrame: 0
+      lastFrame: 200
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -134,36 +260,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: piratecat_anaconda.qc_skeleton|piratecat_anaconda_anim_@die
-      takeName: piratecat_anaconda.qc_skeleton|piratecat_anaconda_anim_@die
-      firstFrame: 0
-      lastFrame: 150
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: piratecat_anaconda.qc_skeleton|piratecat_anaconda_anim_@idle
-      takeName: piratecat_anaconda.qc_skeleton|piratecat_anaconda_anim_@idle
+      name: Skeleton|piratecat_elephant_anim_@idle_inactive
+      takeName: Skeleton|piratecat_elephant_anim_@idle_inactive
       firstFrame: 0
       lastFrame: 200
       wrapMode: 0
@@ -172,7 +270,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -190,10 +288,10 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: piratecat_anaconda.qc_skeleton|piratecat_anaconda_anim_@run
-      takeName: piratecat_anaconda.qc_skeleton|piratecat_anaconda_anim_@run
+      name: Skeleton|piratecat_elephant_anim_@run
+      takeName: Skeleton|piratecat_elephant_anim_@run
       firstFrame: 0
-      lastFrame: 150
+      lastFrame: 59
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -218,10 +316,10 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: piratecat_anaconda.qc_skeleton|piratecat_anaconda_anim_@walk
-      takeName: piratecat_anaconda.qc_skeleton|piratecat_anaconda_anim_@walk
+      name: Skeleton|piratecat_elephant_anim_@walk
+      takeName: Skeleton|piratecat_elephant_anim_@walk
       firstFrame: 0
-      lastFrame: 150
+      lastFrame: 119
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

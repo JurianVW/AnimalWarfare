@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: ad7971f3256c61c4dade035fcaccddb7
-timeCreated: 1521118668
+guid: 70310c7a38e24a14c866e613b7452619
+timeCreated: 1521201026
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -46,19 +46,25 @@ ModelImporter:
     100076: BN_Eye_L_01_end
     100078: BN_Eye_R_01
     100080: BN_Eye_R_01_end
-    100082: BN_Mouth_01
-    100084: BN_Tail_01
-    100086: BN_Tail_02
-    100088: BN_Tail_03
-    100090: BN_Tail_04
-    100092: BN_Tail_04_end
-    100094: BN_Tongue_01
-    100096: BN_Tongue_02
-    100098: BN_Tongue_02_end
-    100100: //RootNode
-    100102: LionessModel
-    100104: Skeleton
-    100106: walk
+    100082: BN_Mane_01
+    100084: BN_Mane_01_end
+    100086: BN_Mane_02
+    100088: BN_Mane_02_end
+    100090: BN_Mane_R_01
+    100092: BN_Mane_R_01_end
+    100094: BN_Mane_R_02
+    100096: BN_Mane_R_02_end
+    100098: BN_Mouth_0
+    100100: BN_Mouth_0_end
+    100102: BN_Tail_01
+    100104: BN_Tail_02
+    100106: BN_Tail_03
+    100108: BN_Tail_04
+    100110: BN_Tail_04_end
+    100112: //RootNode
+    100114: Leopard
+    100116: LeopardModel
+    100118: Skeleton
     400000: Bip01_Head
     400002: Bip01_L_Calf
     400004: Bip01_L_Clavicle
@@ -100,35 +106,35 @@ ModelImporter:
     400076: BN_Eye_L_01_end
     400078: BN_Eye_R_01
     400080: BN_Eye_R_01_end
-    400082: BN_Mouth_01
-    400084: BN_Tail_01
-    400086: BN_Tail_02
-    400088: BN_Tail_03
-    400090: BN_Tail_04
-    400092: BN_Tail_04_end
-    400094: BN_Tongue_01
-    400096: BN_Tongue_02
-    400098: BN_Tongue_02_end
-    400100: //RootNode
-    400102: LionessModel
-    400104: Skeleton
-    400106: walk
-    2100000: lionf_skin
-    4300000: LionessModel
-    7400000: Skeleton|piratecat_lionf_anim_@attack1
-    7400002: Skeleton|piratecat_lionf_anim_@attack1.001
-    7400004: Skeleton|piratecat_lionf_anim_@die
-    7400006: Skeleton|piratecat_lionf_anim_@die.001
-    7400008: Skeleton|piratecat_lionf_anim_@idle
-    7400010: Skeleton|piratecat_lionf_anim_@idle.001
-    7400012: Skeleton|piratecat_lionf_anim_@idle_inactive
-    7400014: Skeleton|piratecat_lionf_anim_@idle_inactive.001
-    7400016: Skeleton|piratecat_lionf_anim_@run
-    7400018: Skeleton|piratecat_lionf_anim_@run.001
-    7400020: Skeleton|piratecat_lionf_anim_@walk
-    7400022: Skeleton|piratecat_lionf_anim_@walk.001
+    400082: BN_Mane_01
+    400084: BN_Mane_01_end
+    400086: BN_Mane_02
+    400088: BN_Mane_02_end
+    400090: BN_Mane_R_01
+    400092: BN_Mane_R_01_end
+    400094: BN_Mane_R_02
+    400096: BN_Mane_R_02_end
+    400098: BN_Mouth_0
+    400100: BN_Mouth_0_end
+    400102: BN_Tail_01
+    400104: BN_Tail_02
+    400106: BN_Tail_03
+    400108: BN_Tail_04
+    400110: BN_Tail_04_end
+    400112: //RootNode
+    400114: Leopard
+    400116: LeopardModel
+    400118: Skeleton
+    2100000: leopard_skin
+    4300000: LeopardModel
+    7400000: Skeleton|piratecat_leopard_anim_@attack1
+    7400002: Skeleton|piratecat_leopard_anim_@die
+    7400004: Skeleton|piratecat_leopard_anim_@idle
+    7400006: Skeleton|piratecat_leopard_anim_@idle_inactive
+    7400008: Skeleton|piratecat_leopard_anim_@run
+    7400010: Skeleton|piratecat_leopard_anim_@walk
     9500000: //RootNode
-    13700000: LionessModel
+    13700000: LeopardModel
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -157,10 +163,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Skeleton|piratecat_lionf_anim_@attack1
-      takeName: Skeleton|piratecat_lionf_anim_@attack1
+      name: Skeleton|piratecat_leopard_anim_@attack1
+      takeName: Skeleton|piratecat_leopard_anim_@attack1
       firstFrame: 0
-      lastFrame: 71
+      lastFrame: 81
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -185,10 +191,10 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_lionf_anim_@die
-      takeName: Skeleton|piratecat_lionf_anim_@die
+      name: Skeleton|piratecat_leopard_anim_@die
+      takeName: Skeleton|piratecat_leopard_anim_@die
       firstFrame: 0
-      lastFrame: 90
+      lastFrame: 110
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -213,10 +219,10 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_lionf_anim_@idle
-      takeName: Skeleton|piratecat_lionf_anim_@idle
+      name: Skeleton|piratecat_leopard_anim_@idle
+      takeName: Skeleton|piratecat_leopard_anim_@idle
       firstFrame: 0
-      lastFrame: 74
+      lastFrame: 200
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -241,8 +247,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_lionf_anim_@idle_inactive
-      takeName: Skeleton|piratecat_lionf_anim_@idle_inactive
+      name: Skeleton|piratecat_leopard_anim_@idle_inactive
+      takeName: Skeleton|piratecat_leopard_anim_@idle_inactive
       firstFrame: 0
       lastFrame: 300
       wrapMode: 0
@@ -269,10 +275,10 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_lionf_anim_@run
-      takeName: Skeleton|piratecat_lionf_anim_@run
+      name: Skeleton|piratecat_leopard_anim_@run
+      takeName: Skeleton|piratecat_leopard_anim_@run
       firstFrame: 0
-      lastFrame: 36
+      lastFrame: 35
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -297,8 +303,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_lionf_anim_@walk
-      takeName: Skeleton|piratecat_lionf_anim_@walk
+      name: Skeleton|piratecat_leopard_anim_@walk
+      takeName: Skeleton|piratecat_leopard_anim_@walk
       firstFrame: 0
       lastFrame: 99
       wrapMode: 0

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: ad7971f3256c61c4dade035fcaccddb7
-timeCreated: 1521118668
+guid: 2dda0cd081536c744b501d658ce6837c
+timeCreated: 1521124724
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -11,124 +11,92 @@ ModelImporter:
     100006: Bip01_L_Finger0
     100008: Bip01_L_Finger0_end
     100010: Bip01_L_Foot
-    100012: Bip01_L_Foot_end
-    100014: Bip01_L_Forearm
-    100016: Bip01_L_Hand
-    100018: Bip01_L_HorseLink
-    100020: Bip01_L_Thigh
-    100022: Bip01_L_UpperArm
-    100024: Bip01_Neck
-    100026: Bip01_Neck1
-    100028: Bip01_Pelvis
-    100030: Bip01_R_Calf
-    100032: Bip01_R_Clavicle
-    100034: Bip01_R_Finger0
-    100036: Bip01_R_Finger0_end
-    100038: Bip01_R_Foot
-    100040: Bip01_R_Foot_end
+    100012: Bip01_L_Forearm
+    100014: Bip01_L_Hand
+    100016: Bip01_L_HorseLink
+    100018: Bip01_L_Thigh
+    100020: Bip01_L_Toe0
+    100022: Bip01_L_Toe0_end
+    100024: Bip01_L_UpperArm
+    100026: Bip01_Neck
+    100028: Bip01_Neck1
+    100030: Bip01_Pelvis
+    100032: Bip01_R_Calf
+    100034: Bip01_R_Clavicle
+    100036: Bip01_R_Finger0
+    100038: Bip01_R_Finger0_end
+    100040: Bip01_R_Foot
     100042: Bip01_R_Forearm
     100044: Bip01_R_Hand
     100046: Bip01_R_HorseLink
     100048: Bip01_R_Thigh
-    100050: Bip01_R_UpperArm
-    100052: Bip01_Spine
-    100054: Bip01_Spine1
-    100056: Bip01_Spine2
-    100058: BN_Beard_L_01
-    100060: BN_Beard_L_01_end
-    100062: BN_Beard_R_01
-    100064: BN_Beard_R_01_end
-    100066: BN_Ear_L_01
-    100068: BN_Ear_L_01_end
-    100070: BN_Ear_R_01
-    100072: BN_Ear_R_01_end
-    100074: BN_Eye_L_01
-    100076: BN_Eye_L_01_end
-    100078: BN_Eye_R_01
-    100080: BN_Eye_R_01_end
-    100082: BN_Mouth_01
-    100084: BN_Tail_01
-    100086: BN_Tail_02
-    100088: BN_Tail_03
-    100090: BN_Tail_04
-    100092: BN_Tail_04_end
-    100094: BN_Tongue_01
-    100096: BN_Tongue_02
-    100098: BN_Tongue_02_end
-    100100: //RootNode
-    100102: LionessModel
-    100104: Skeleton
-    100106: walk
+    100050: Bip01_R_Toe0
+    100052: Bip01_R_Toe0_end
+    100054: Bip01_R_UpperArm
+    100056: Bip01_Spine
+    100058: Bip01_Spine1
+    100060: BN_Mouth_01
+    100062: BN_Mouth_01_end
+    100064: BN_Tail_01
+    100066: BN_Tail_02
+    100068: BN_Tail_03
+    100070: BN_Tail_04
+    100072: BN_Tail_04_end
+    100074: idle 2
+    100076: //RootNode
+    100078: LionModel
+    100080: Skeleton
     400000: Bip01_Head
     400002: Bip01_L_Calf
     400004: Bip01_L_Clavicle
     400006: Bip01_L_Finger0
     400008: Bip01_L_Finger0_end
     400010: Bip01_L_Foot
-    400012: Bip01_L_Foot_end
-    400014: Bip01_L_Forearm
-    400016: Bip01_L_Hand
-    400018: Bip01_L_HorseLink
-    400020: Bip01_L_Thigh
-    400022: Bip01_L_UpperArm
-    400024: Bip01_Neck
-    400026: Bip01_Neck1
-    400028: Bip01_Pelvis
-    400030: Bip01_R_Calf
-    400032: Bip01_R_Clavicle
-    400034: Bip01_R_Finger0
-    400036: Bip01_R_Finger0_end
-    400038: Bip01_R_Foot
-    400040: Bip01_R_Foot_end
+    400012: Bip01_L_Forearm
+    400014: Bip01_L_Hand
+    400016: Bip01_L_HorseLink
+    400018: Bip01_L_Thigh
+    400020: Bip01_L_Toe0
+    400022: Bip01_L_Toe0_end
+    400024: Bip01_L_UpperArm
+    400026: Bip01_Neck
+    400028: Bip01_Neck1
+    400030: Bip01_Pelvis
+    400032: Bip01_R_Calf
+    400034: Bip01_R_Clavicle
+    400036: Bip01_R_Finger0
+    400038: Bip01_R_Finger0_end
+    400040: Bip01_R_Foot
     400042: Bip01_R_Forearm
     400044: Bip01_R_Hand
     400046: Bip01_R_HorseLink
     400048: Bip01_R_Thigh
-    400050: Bip01_R_UpperArm
-    400052: Bip01_Spine
-    400054: Bip01_Spine1
-    400056: Bip01_Spine2
-    400058: BN_Beard_L_01
-    400060: BN_Beard_L_01_end
-    400062: BN_Beard_R_01
-    400064: BN_Beard_R_01_end
-    400066: BN_Ear_L_01
-    400068: BN_Ear_L_01_end
-    400070: BN_Ear_R_01
-    400072: BN_Ear_R_01_end
-    400074: BN_Eye_L_01
-    400076: BN_Eye_L_01_end
-    400078: BN_Eye_R_01
-    400080: BN_Eye_R_01_end
-    400082: BN_Mouth_01
-    400084: BN_Tail_01
-    400086: BN_Tail_02
-    400088: BN_Tail_03
-    400090: BN_Tail_04
-    400092: BN_Tail_04_end
-    400094: BN_Tongue_01
-    400096: BN_Tongue_02
-    400098: BN_Tongue_02_end
-    400100: //RootNode
-    400102: LionessModel
-    400104: Skeleton
-    400106: walk
-    2100000: lionf_skin
-    4300000: LionessModel
-    7400000: Skeleton|piratecat_lionf_anim_@attack1
-    7400002: Skeleton|piratecat_lionf_anim_@attack1.001
-    7400004: Skeleton|piratecat_lionf_anim_@die
-    7400006: Skeleton|piratecat_lionf_anim_@die.001
-    7400008: Skeleton|piratecat_lionf_anim_@idle
-    7400010: Skeleton|piratecat_lionf_anim_@idle.001
-    7400012: Skeleton|piratecat_lionf_anim_@idle_inactive
-    7400014: Skeleton|piratecat_lionf_anim_@idle_inactive.001
-    7400016: Skeleton|piratecat_lionf_anim_@run
-    7400018: Skeleton|piratecat_lionf_anim_@run.001
-    7400020: Skeleton|piratecat_lionf_anim_@walk
-    7400022: Skeleton|piratecat_lionf_anim_@walk.001
+    400050: Bip01_R_Toe0
+    400052: Bip01_R_Toe0_end
+    400054: Bip01_R_UpperArm
+    400056: Bip01_Spine
+    400058: Bip01_Spine1
+    400060: BN_Mouth_01
+    400062: BN_Mouth_01_end
+    400064: BN_Tail_01
+    400066: BN_Tail_02
+    400068: BN_Tail_03
+    400070: BN_Tail_04
+    400072: BN_Tail_04_end
+    400074: idle 2
+    400076: //RootNode
+    400078: LionModel
+    400080: Skeleton
+    2100000: lionm_skin
+    4300000: LionModel
+    7400000: Skeleton|piratecat_lionm_anim_@attack1
+    7400002: Skeleton|piratecat_lionm_anim_@die
+    7400004: Skeleton|piratecat_lionm_anim_@idle
+    7400006: Skeleton|piratecat_lionm_anim_@idle_inactive
+    7400008: Skeleton|piratecat_lionm_anim_@run
+    7400010: Skeleton|piratecat_lionm_anim_@walk
     9500000: //RootNode
-    13700000: LionessModel
+    13700000: LionModel
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -157,8 +125,8 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Skeleton|piratecat_lionf_anim_@attack1
-      takeName: Skeleton|piratecat_lionf_anim_@attack1
+      name: Skeleton|piratecat_lionm_anim_@attack1
+      takeName: Skeleton|piratecat_lionm_anim_@attack1
       firstFrame: 0
       lastFrame: 71
       wrapMode: 0
@@ -185,10 +153,10 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_lionf_anim_@die
-      takeName: Skeleton|piratecat_lionf_anim_@die
+      name: Skeleton|piratecat_lionm_anim_@die
+      takeName: Skeleton|piratecat_lionm_anim_@die
       firstFrame: 0
-      lastFrame: 90
+      lastFrame: 110
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -213,10 +181,10 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_lionf_anim_@idle
-      takeName: Skeleton|piratecat_lionf_anim_@idle
+      name: Skeleton|piratecat_lionm_anim_@idle
+      takeName: Skeleton|piratecat_lionm_anim_@idle
       firstFrame: 0
-      lastFrame: 74
+      lastFrame: 179
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -241,10 +209,10 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_lionf_anim_@idle_inactive
-      takeName: Skeleton|piratecat_lionf_anim_@idle_inactive
+      name: Skeleton|piratecat_lionm_anim_@idle_inactive
+      takeName: Skeleton|piratecat_lionm_anim_@idle_inactive
       firstFrame: 0
-      lastFrame: 300
+      lastFrame: 279
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -269,10 +237,10 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_lionf_anim_@run
-      takeName: Skeleton|piratecat_lionf_anim_@run
+      name: Skeleton|piratecat_lionm_anim_@run
+      takeName: Skeleton|piratecat_lionm_anim_@run
       firstFrame: 0
-      lastFrame: 36
+      lastFrame: 39
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -297,10 +265,10 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_lionf_anim_@walk
-      takeName: Skeleton|piratecat_lionf_anim_@walk
+      name: Skeleton|piratecat_lionm_anim_@walk
+      takeName: Skeleton|piratecat_lionm_anim_@walk
       firstFrame: 0
-      lastFrame: 99
+      lastFrame: 108
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

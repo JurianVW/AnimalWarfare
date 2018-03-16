@@ -1,134 +1,102 @@
 fileFormatVersion: 2
-guid: ad7971f3256c61c4dade035fcaccddb7
-timeCreated: 1521118668
+guid: ffca295b64a07de45a869ee7fdd3d49f
+timeCreated: 1521199993
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Bip01_Head
-    100002: Bip01_L_Calf
-    100004: Bip01_L_Clavicle
-    100006: Bip01_L_Finger0
-    100008: Bip01_L_Finger0_end
-    100010: Bip01_L_Foot
-    100012: Bip01_L_Foot_end
-    100014: Bip01_L_Forearm
-    100016: Bip01_L_Hand
-    100018: Bip01_L_HorseLink
-    100020: Bip01_L_Thigh
-    100022: Bip01_L_UpperArm
-    100024: Bip01_Neck
-    100026: Bip01_Neck1
-    100028: Bip01_Pelvis
-    100030: Bip01_R_Calf
-    100032: Bip01_R_Clavicle
-    100034: Bip01_R_Finger0
-    100036: Bip01_R_Finger0_end
-    100038: Bip01_R_Foot
-    100040: Bip01_R_Foot_end
-    100042: Bip01_R_Forearm
-    100044: Bip01_R_Hand
-    100046: Bip01_R_HorseLink
-    100048: Bip01_R_Thigh
-    100050: Bip01_R_UpperArm
-    100052: Bip01_Spine
-    100054: Bip01_Spine1
-    100056: Bip01_Spine2
-    100058: BN_Beard_L_01
-    100060: BN_Beard_L_01_end
-    100062: BN_Beard_R_01
-    100064: BN_Beard_R_01_end
-    100066: BN_Ear_L_01
-    100068: BN_Ear_L_01_end
-    100070: BN_Ear_R_01
-    100072: BN_Ear_R_01_end
-    100074: BN_Eye_L_01
-    100076: BN_Eye_L_01_end
-    100078: BN_Eye_R_01
-    100080: BN_Eye_R_01_end
-    100082: BN_Mouth_01
-    100084: BN_Tail_01
-    100086: BN_Tail_02
-    100088: BN_Tail_03
-    100090: BN_Tail_04
-    100092: BN_Tail_04_end
-    100094: BN_Tongue_01
-    100096: BN_Tongue_02
-    100098: BN_Tongue_02_end
-    100100: //RootNode
-    100102: LionessModel
-    100104: Skeleton
-    100106: walk
-    400000: Bip01_Head
-    400002: Bip01_L_Calf
-    400004: Bip01_L_Clavicle
-    400006: Bip01_L_Finger0
-    400008: Bip01_L_Finger0_end
-    400010: Bip01_L_Foot
-    400012: Bip01_L_Foot_end
-    400014: Bip01_L_Forearm
-    400016: Bip01_L_Hand
-    400018: Bip01_L_HorseLink
-    400020: Bip01_L_Thigh
-    400022: Bip01_L_UpperArm
-    400024: Bip01_Neck
-    400026: Bip01_Neck1
-    400028: Bip01_Pelvis
-    400030: Bip01_R_Calf
-    400032: Bip01_R_Clavicle
-    400034: Bip01_R_Finger0
-    400036: Bip01_R_Finger0_end
-    400038: Bip01_R_Foot
-    400040: Bip01_R_Foot_end
-    400042: Bip01_R_Forearm
-    400044: Bip01_R_Hand
-    400046: Bip01_R_HorseLink
-    400048: Bip01_R_Thigh
-    400050: Bip01_R_UpperArm
-    400052: Bip01_Spine
-    400054: Bip01_Spine1
-    400056: Bip01_Spine2
-    400058: BN_Beard_L_01
-    400060: BN_Beard_L_01_end
-    400062: BN_Beard_R_01
-    400064: BN_Beard_R_01_end
-    400066: BN_Ear_L_01
-    400068: BN_Ear_L_01_end
-    400070: BN_Ear_R_01
-    400072: BN_Ear_R_01_end
-    400074: BN_Eye_L_01
-    400076: BN_Eye_L_01_end
-    400078: BN_Eye_R_01
-    400080: BN_Eye_R_01_end
-    400082: BN_Mouth_01
-    400084: BN_Tail_01
-    400086: BN_Tail_02
-    400088: BN_Tail_03
-    400090: BN_Tail_04
-    400092: BN_Tail_04_end
-    400094: BN_Tongue_01
-    400096: BN_Tongue_02
-    400098: BN_Tongue_02_end
-    400100: //RootNode
-    400102: LionessModel
-    400104: Skeleton
-    400106: walk
-    2100000: lionf_skin
-    4300000: LionessModel
-    7400000: Skeleton|piratecat_lionf_anim_@attack1
-    7400002: Skeleton|piratecat_lionf_anim_@attack1.001
-    7400004: Skeleton|piratecat_lionf_anim_@die
-    7400006: Skeleton|piratecat_lionf_anim_@die.001
-    7400008: Skeleton|piratecat_lionf_anim_@idle
-    7400010: Skeleton|piratecat_lionf_anim_@idle.001
-    7400012: Skeleton|piratecat_lionf_anim_@idle_inactive
-    7400014: Skeleton|piratecat_lionf_anim_@idle_inactive.001
-    7400016: Skeleton|piratecat_lionf_anim_@run
-    7400018: Skeleton|piratecat_lionf_anim_@run.001
-    7400020: Skeleton|piratecat_lionf_anim_@walk
-    7400022: Skeleton|piratecat_lionf_anim_@walk.001
+    100000: Bip01-Head
+    100002: Bip01-L-Calf
+    100004: Bip01-L-Clavicle
+    100006: Bip01-L-Finger0
+    100008: Bip01-L-Finger0_end
+    100010: Bip01-L-Foot
+    100012: Bip01-L-Foot_end
+    100014: Bip01-L-Forearm
+    100016: Bip01-L-Hand
+    100018: Bip01-L-HorseLink
+    100020: Bip01-L-Thigh
+    100022: Bip01-L-UpperArm
+    100024: Bip01-Neck
+    100026: Bip01-Neck1
+    100028: Bip01-Pelvis
+    100030: Bip01-R-Calf
+    100032: Bip01-R-Clavicle
+    100034: Bip01-R-Finger0
+    100036: Bip01-R-Finger0_end
+    100038: Bip01-R-Foot
+    100040: Bip01-R-Foot_end
+    100042: Bip01-R-Forearm
+    100044: Bip01-R-Hand
+    100046: Bip01-R-HorseLink
+    100048: Bip01-R-Thigh
+    100050: Bip01-R-UpperArm
+    100052: Bip01-Spine
+    100054: Bip01-Spine1
+    100056: BN_-UpperArm_L_01
+    100058: BN_-UpperArm_L_01_end
+    100060: BN_-UpperArm_R_01
+    100062: BN_-UpperArm_R_01_end
+    100064: BN_Mouth_01
+    100066: BN_Mouth_01_end
+    100068: BN_Tail_01
+    100070: BN_Tail_02
+    100072: BN_Tail_02_end
+    100074: //RootNode
+    100076: Goat
+    100078: GoatModel
+    100080: Skeleton
+    400000: Bip01-Head
+    400002: Bip01-L-Calf
+    400004: Bip01-L-Clavicle
+    400006: Bip01-L-Finger0
+    400008: Bip01-L-Finger0_end
+    400010: Bip01-L-Foot
+    400012: Bip01-L-Foot_end
+    400014: Bip01-L-Forearm
+    400016: Bip01-L-Hand
+    400018: Bip01-L-HorseLink
+    400020: Bip01-L-Thigh
+    400022: Bip01-L-UpperArm
+    400024: Bip01-Neck
+    400026: Bip01-Neck1
+    400028: Bip01-Pelvis
+    400030: Bip01-R-Calf
+    400032: Bip01-R-Clavicle
+    400034: Bip01-R-Finger0
+    400036: Bip01-R-Finger0_end
+    400038: Bip01-R-Foot
+    400040: Bip01-R-Foot_end
+    400042: Bip01-R-Forearm
+    400044: Bip01-R-Hand
+    400046: Bip01-R-HorseLink
+    400048: Bip01-R-Thigh
+    400050: Bip01-R-UpperArm
+    400052: Bip01-Spine
+    400054: Bip01-Spine1
+    400056: BN_-UpperArm_L_01
+    400058: BN_-UpperArm_L_01_end
+    400060: BN_-UpperArm_R_01
+    400062: BN_-UpperArm_R_01_end
+    400064: BN_Mouth_01
+    400066: BN_Mouth_01_end
+    400068: BN_Tail_01
+    400070: BN_Tail_02
+    400072: BN_Tail_02_end
+    400074: //RootNode
+    400076: Goat
+    400078: GoatModel
+    400080: Skeleton
+    2100000: goat_skin
+    4300000: GoatModel
+    7400000: Skeleton|piratecat_goat_anim_@attack1
+    7400002: Skeleton|piratecat_goat_anim_@die
+    7400004: Skeleton|piratecat_goat_anim_@idle
+    7400006: Skeleton|piratecat_goat_anim_@idle_inactive
+    7400008: Skeleton|piratecat_goat_anim_@run
+    7400010: Skeleton|piratecat_goat_anim_@walk
     9500000: //RootNode
-    13700000: LionessModel
+    13700000: GoatModel
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -157,66 +125,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Skeleton|piratecat_lionf_anim_@attack1
-      takeName: Skeleton|piratecat_lionf_anim_@attack1
+      name: Skeleton|piratecat_goat_anim_@attack1
+      takeName: Skeleton|piratecat_goat_anim_@attack1
       firstFrame: 0
       lastFrame: 71
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Skeleton|piratecat_lionf_anim_@die
-      takeName: Skeleton|piratecat_lionf_anim_@die
-      firstFrame: 0
-      lastFrame: 90
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Skeleton|piratecat_lionf_anim_@idle
-      takeName: Skeleton|piratecat_lionf_anim_@idle
-      firstFrame: 0
-      lastFrame: 74
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -241,10 +153,10 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_lionf_anim_@idle_inactive
-      takeName: Skeleton|piratecat_lionf_anim_@idle_inactive
+      name: Skeleton|piratecat_goat_anim_@die
+      takeName: Skeleton|piratecat_goat_anim_@die
       firstFrame: 0
-      lastFrame: 300
+      lastFrame: 80
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -269,10 +181,38 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_lionf_anim_@run
-      takeName: Skeleton|piratecat_lionf_anim_@run
+      name: Skeleton|piratecat_goat_anim_@idle
+      takeName: Skeleton|piratecat_goat_anim_@idle
       firstFrame: 0
-      lastFrame: 36
+      lastFrame: 119
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Skeleton|piratecat_goat_anim_@idle_inactive
+      takeName: Skeleton|piratecat_goat_anim_@idle_inactive
+      firstFrame: 0
+      lastFrame: 150
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -297,10 +237,38 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_lionf_anim_@walk
-      takeName: Skeleton|piratecat_lionf_anim_@walk
+      name: Skeleton|piratecat_goat_anim_@run
+      takeName: Skeleton|piratecat_goat_anim_@run
       firstFrame: 0
-      lastFrame: 99
+      lastFrame: 35
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Skeleton|piratecat_goat_anim_@walk
+      takeName: Skeleton|piratecat_goat_anim_@walk
+      firstFrame: 0
+      lastFrame: 71
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
