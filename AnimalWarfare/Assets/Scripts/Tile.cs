@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Tile : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
+	public Material deselectedMaterial, selectedMaterial;
+
+	void OnMouseOver() {
+		this.GetComponent<Renderer>().material = selectedMaterial;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+
+	void OnMouseExit() {
+		this.GetComponent<Renderer>().material = deselectedMaterial;
 	}
 }
