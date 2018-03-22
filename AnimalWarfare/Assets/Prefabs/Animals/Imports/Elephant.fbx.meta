@@ -111,13 +111,13 @@ ModelImporter:
     400102: Skeleton
     2100000: elephant_skin
     4300000: ElephantModel
-    7400000: Skeleton|piratecat_elephant_anim_@attack1
-    7400002: Skeleton|piratecat_elephant_anim_@attack2
-    7400004: Skeleton|piratecat_elephant_anim_@die
-    7400006: Skeleton|piratecat_elephant_anim_@idle
-    7400008: Skeleton|piratecat_elephant_anim_@idle_inactive
-    7400010: Skeleton|piratecat_elephant_anim_@run
-    7400012: Skeleton|piratecat_elephant_anim_@walk
+    7400000: ElephantAttack1
+    7400002: ElephantAttack2
+    7400004: ElephantDie
+    7400006: ElephantIdle
+    7400008: ElephantIdleInactive
+    7400010: ElephantRun
+    7400012: ElephantWalk
     9500000: //RootNode
     13700000: ElephantModel
   externalObjects: {}
@@ -148,7 +148,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Skeleton|piratecat_elephant_anim_@attack1
+      name: ElephantAttack1
       takeName: Skeleton|piratecat_elephant_anim_@attack1
       firstFrame: 0
       lastFrame: 90
@@ -176,7 +176,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_elephant_anim_@attack2
+      name: ElephantAttack2
       takeName: Skeleton|piratecat_elephant_anim_@attack2
       firstFrame: 0
       lastFrame: 74
@@ -204,7 +204,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_elephant_anim_@die
+      name: ElephantDie
       takeName: Skeleton|piratecat_elephant_anim_@die
       firstFrame: 0
       lastFrame: 177
@@ -232,7 +232,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_elephant_anim_@idle
+      name: ElephantIdle
       takeName: Skeleton|piratecat_elephant_anim_@idle
       firstFrame: 0
       lastFrame: 200
@@ -260,10 +260,38 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_elephant_anim_@idle_inactive
+      name: ElephantIdleInactive
       takeName: Skeleton|piratecat_elephant_anim_@idle_inactive
       firstFrame: 0
       lastFrame: 200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ElephantRun
+      takeName: Skeleton|piratecat_elephant_anim_@run
+      firstFrame: 0
+      lastFrame: 59
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -288,35 +316,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_elephant_anim_@run
-      takeName: Skeleton|piratecat_elephant_anim_@run
-      firstFrame: 0
-      lastFrame: 59
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Skeleton|piratecat_elephant_anim_@walk
+      name: ElephantWalk
       takeName: Skeleton|piratecat_elephant_anim_@walk
       firstFrame: 0
       lastFrame: 119
@@ -326,7 +326,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

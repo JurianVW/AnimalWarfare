@@ -305,6 +305,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4818005013784602}
   - component: {fileID: 95616564798426404}
+  - component: {fileID: 114501355757027362}
   m_Layer: 0
   m_Name: Leopard
   m_TagString: Untagged
@@ -1621,8 +1622,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1325058235717426}
   m_LocalRotation: {x: -0, y: -0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.414, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 7.21, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4163993974324268}
   - {fileID: 4483213021751038}
@@ -1769,6 +1770,22 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114501355757027362
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1325058235717426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c2a8e35eb4e33047bae713cccae4806, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hero: 0
+  healthPower: 50
+  attackPower: 10
+  movement: 4
+  currentHealthPower: 0
 --- !u!137 &137587371195129494
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

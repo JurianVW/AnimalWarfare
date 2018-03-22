@@ -127,12 +127,12 @@ ModelImporter:
     400118: Skeleton
     2100000: leopard_skin
     4300000: LeopardModel
-    7400000: Skeleton|piratecat_leopard_anim_@attack1
-    7400002: Skeleton|piratecat_leopard_anim_@die
-    7400004: Skeleton|piratecat_leopard_anim_@idle
-    7400006: Skeleton|piratecat_leopard_anim_@idle_inactive
-    7400008: Skeleton|piratecat_leopard_anim_@run
-    7400010: Skeleton|piratecat_leopard_anim_@walk
+    7400000: LeopardAttack
+    7400002: LeopardDie
+    7400004: LeopardIdle
+    7400006: LeopardIdleInactive
+    7400008: LeopardRun
+    7400010: LeopardWalk
     9500000: //RootNode
     13700000: LeopardModel
   externalObjects: {}
@@ -163,7 +163,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Skeleton|piratecat_leopard_anim_@attack1
+      name: LeopardAttack
       takeName: Skeleton|piratecat_leopard_anim_@attack1
       firstFrame: 0
       lastFrame: 81
@@ -191,7 +191,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_leopard_anim_@die
+      name: LeopardDie
       takeName: Skeleton|piratecat_leopard_anim_@die
       firstFrame: 0
       lastFrame: 110
@@ -219,7 +219,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_leopard_anim_@idle
+      name: LeopardIdle
       takeName: Skeleton|piratecat_leopard_anim_@idle
       firstFrame: 0
       lastFrame: 200
@@ -247,7 +247,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_leopard_anim_@idle_inactive
+      name: LeopardIdleInactive
       takeName: Skeleton|piratecat_leopard_anim_@idle_inactive
       firstFrame: 0
       lastFrame: 300
@@ -275,7 +275,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_leopard_anim_@run
+      name: LeopardRun
       takeName: Skeleton|piratecat_leopard_anim_@run
       firstFrame: 0
       lastFrame: 35
@@ -285,7 +285,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -303,7 +303,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_leopard_anim_@walk
+      name: LeopardWalk
       takeName: Skeleton|piratecat_leopard_anim_@walk
       firstFrame: 0
       lastFrame: 99
@@ -313,7 +313,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

@@ -410,6 +410,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4693770995893168}
   - component: {fileID: 95159236554775372}
+  - component: {fileID: 114601031887807360}
   m_Layer: 0
   m_Name: SaberToothTiger
   m_TagString: Untagged
@@ -1275,8 +1276,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1475737183122300}
   m_LocalRotation: {x: -0, y: -0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.940001, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 19.13, y: 0, z: 0}
+  m_LocalScale: {x: 1.4, y: 1.4, z: 1.4}
   m_Children:
   - {fileID: 4428665217361580}
   - {fileID: 4396217711974688}
@@ -1415,7 +1416,7 @@ Animator:
   m_GameObject: {fileID: 1475737183122300}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 6a0b9761806625a44b0a7ae2fdf2f2c6, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f1116d48d7fdeb54eb600267f525a7ed, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1423,6 +1424,22 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114601031887807360
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1475737183122300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c2a8e35eb4e33047bae713cccae4806, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hero: 1
+  healthPower: 100
+  attackPower: 20
+  movement: 4
+  currentHealthPower: 0
 --- !u!137 &137616441590721066
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

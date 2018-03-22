@@ -115,17 +115,17 @@ ModelImporter:
     400106: walk
     2100000: lionf_skin
     4300000: LionessModel
-    7400000: Skeleton|piratecat_lionf_anim_@attack1
+    7400000: LionessAttack
     7400002: Skeleton|piratecat_lionf_anim_@attack1.001
-    7400004: Skeleton|piratecat_lionf_anim_@die
+    7400004: LionessDie
     7400006: Skeleton|piratecat_lionf_anim_@die.001
-    7400008: Skeleton|piratecat_lionf_anim_@idle
+    7400008: LionessIdle
     7400010: Skeleton|piratecat_lionf_anim_@idle.001
-    7400012: Skeleton|piratecat_lionf_anim_@idle_inactive
+    7400012: LionessIdleInactive
     7400014: Skeleton|piratecat_lionf_anim_@idle_inactive.001
-    7400016: Skeleton|piratecat_lionf_anim_@run
+    7400016: LionessRun
     7400018: Skeleton|piratecat_lionf_anim_@run.001
-    7400020: Skeleton|piratecat_lionf_anim_@walk
+    7400020: LionessWalk
     7400022: Skeleton|piratecat_lionf_anim_@walk.001
     9500000: //RootNode
     13700000: LionessModel
@@ -157,7 +157,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Skeleton|piratecat_lionf_anim_@attack1
+      name: LionessAttack
       takeName: Skeleton|piratecat_lionf_anim_@attack1
       firstFrame: 0
       lastFrame: 71
@@ -185,7 +185,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_lionf_anim_@die
+      name: LionessDie
       takeName: Skeleton|piratecat_lionf_anim_@die
       firstFrame: 0
       lastFrame: 90
@@ -213,7 +213,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_lionf_anim_@idle
+      name: LionessIdle
       takeName: Skeleton|piratecat_lionf_anim_@idle
       firstFrame: 0
       lastFrame: 74
@@ -241,7 +241,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_lionf_anim_@idle_inactive
+      name: LionessIdleInactive
       takeName: Skeleton|piratecat_lionf_anim_@idle_inactive
       firstFrame: 0
       lastFrame: 300
@@ -269,7 +269,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_lionf_anim_@run
+      name: LionessRun
       takeName: Skeleton|piratecat_lionf_anim_@run
       firstFrame: 0
       lastFrame: 36
@@ -279,7 +279,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -297,7 +297,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_lionf_anim_@walk
+      name: LionessWalk
       takeName: Skeleton|piratecat_lionf_anim_@walk
       firstFrame: 0
       lastFrame: 99
@@ -307,7 +307,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

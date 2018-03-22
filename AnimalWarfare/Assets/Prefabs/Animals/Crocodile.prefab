@@ -66,6 +66,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4409691536801142}
   - component: {fileID: 95492567036599592}
+  - component: {fileID: 114068758518428330}
   m_Layer: 0
   m_Name: Crocodile
   m_TagString: Untagged
@@ -1334,6 +1335,22 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114068758518428330
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1154857515951604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c2a8e35eb4e33047bae713cccae4806, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hero: 0
+  healthPower: 65
+  attackPower: 18
+  movement: 2
+  currentHealthPower: 0
 --- !u!137 &137167837067736448
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

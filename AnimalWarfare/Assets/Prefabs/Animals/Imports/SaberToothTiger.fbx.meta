@@ -103,12 +103,12 @@ ModelImporter:
     400094: ToothTiger_A01
     2100000: toothtiger_skin
     4300000: SaberToothTigerModel
-    7400000: Skeleton|piratecat_toothtiger_anim_@attack1
-    7400002: Skeleton|piratecat_toothtiger_anim_@die
-    7400004: Skeleton|piratecat_toothtiger_anim_@idle
-    7400006: Skeleton|piratecat_toothtiger_anim_@idle_inactive
-    7400008: Skeleton|piratecat_toothtiger_anim_@run
-    7400010: Skeleton|piratecat_toothtiger_anim_@walk
+    7400000: SaberAttack
+    7400002: SaberDie
+    7400004: SaberIdle
+    7400006: SaberIdleInactive
+    7400008: SaberRun
+    7400010: SaberWalk
     9500000: //RootNode
     13700000: SaberToothTigerModel
   externalObjects: {}
@@ -139,7 +139,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Skeleton|piratecat_toothtiger_anim_@attack1
+      name: SaberAttack
       takeName: Skeleton|piratecat_toothtiger_anim_@attack1
       firstFrame: 0
       lastFrame: 89
@@ -167,7 +167,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_toothtiger_anim_@die
+      name: SaberDie
       takeName: Skeleton|piratecat_toothtiger_anim_@die
       firstFrame: 0
       lastFrame: 129
@@ -195,7 +195,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_toothtiger_anim_@idle
+      name: SaberIdle
       takeName: Skeleton|piratecat_toothtiger_anim_@idle
       firstFrame: 0
       lastFrame: 120
@@ -223,7 +223,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_toothtiger_anim_@idle_inactive
+      name: SaberIdleInactive
       takeName: Skeleton|piratecat_toothtiger_anim_@idle_inactive
       firstFrame: 0
       lastFrame: 200
@@ -251,7 +251,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_toothtiger_anim_@run
+      name: SaberRun
       takeName: Skeleton|piratecat_toothtiger_anim_@run
       firstFrame: 0
       lastFrame: 41
@@ -261,7 +261,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -279,7 +279,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_toothtiger_anim_@walk
+      name: SaberWalk
       takeName: Skeleton|piratecat_toothtiger_anim_@walk
       firstFrame: 0
       lastFrame: 99

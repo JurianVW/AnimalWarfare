@@ -89,12 +89,12 @@ ModelImporter:
     400080: Skeleton
     2100000: lionm_skin
     4300000: LionModel
-    7400000: Skeleton|piratecat_lionm_anim_@attack1
-    7400002: Skeleton|piratecat_lionm_anim_@die
-    7400004: Skeleton|piratecat_lionm_anim_@idle
-    7400006: Skeleton|piratecat_lionm_anim_@idle_inactive
-    7400008: Skeleton|piratecat_lionm_anim_@run
-    7400010: Skeleton|piratecat_lionm_anim_@walk
+    7400000: LionAttack
+    7400002: LionDie
+    7400004: LionIdle
+    7400006: LionIdleInactive
+    7400008: LionRun
+    7400010: LionWalk
     9500000: //RootNode
     13700000: LionModel
   externalObjects: {}
@@ -125,7 +125,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Skeleton|piratecat_lionm_anim_@attack1
+      name: LionAttack
       takeName: Skeleton|piratecat_lionm_anim_@attack1
       firstFrame: 0
       lastFrame: 71
@@ -153,7 +153,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_lionm_anim_@die
+      name: LionDie
       takeName: Skeleton|piratecat_lionm_anim_@die
       firstFrame: 0
       lastFrame: 110
@@ -181,7 +181,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_lionm_anim_@idle
+      name: LionIdle
       takeName: Skeleton|piratecat_lionm_anim_@idle
       firstFrame: 0
       lastFrame: 179
@@ -209,7 +209,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_lionm_anim_@idle_inactive
+      name: LionIdleInactive
       takeName: Skeleton|piratecat_lionm_anim_@idle_inactive
       firstFrame: 0
       lastFrame: 279
@@ -237,7 +237,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_lionm_anim_@run
+      name: LionRun
       takeName: Skeleton|piratecat_lionm_anim_@run
       firstFrame: 0
       lastFrame: 39
@@ -247,7 +247,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -265,7 +265,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_lionm_anim_@walk
+      name: LionWalk
       takeName: Skeleton|piratecat_lionm_anim_@walk
       firstFrame: 0
       lastFrame: 108
@@ -275,7 +275,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

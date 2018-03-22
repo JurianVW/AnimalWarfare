@@ -2,15 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Animal : MonoBehaviour {
+public class Animal : MonoBehaviour
+{
+    public bool hero;
+    public int healthPower, attackPower, movement;
+    public int currentHealthPower;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }

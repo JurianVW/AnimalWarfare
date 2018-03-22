@@ -95,6 +95,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4378227680675628}
   - component: {fileID: 95112150603614854}
+  - component: {fileID: 114156340361370466}
   m_Layer: 0
   m_Name: Puma
   m_TagString: Untagged
@@ -1172,8 +1173,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1121519425910310}
   m_LocalRotation: {x: -0, y: -0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.793, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 15, y: 0, z: 0}
+  m_LocalScale: {x: 2.25, y: 2.25, z: 2.25}
   m_Children:
   - {fileID: 4842261690180092}
   - {fileID: 4826616858246646}
@@ -1588,7 +1589,7 @@ Animator:
   m_GameObject: {fileID: 1121519425910310}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 941212a88627d3a40b2a742c5a6da7a4, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 74c09f0136f629846b0eb59611e9d3bd, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1596,6 +1597,22 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114156340361370466
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1121519425910310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c2a8e35eb4e33047bae713cccae4806, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hero: 0
+  healthPower: 40
+  attackPower: 10
+  movement: 4
+  currentHealthPower: 0
 --- !u!137 &137088730572335294
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

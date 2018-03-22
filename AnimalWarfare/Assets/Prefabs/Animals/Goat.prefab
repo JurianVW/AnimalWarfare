@@ -500,6 +500,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4180950082027154}
   - component: {fileID: 95222746849150986}
+  - component: {fileID: 114537800741249328}
   m_Layer: 0
   m_Name: Goat
   m_TagString: Untagged
@@ -787,8 +788,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1795979787452770}
   m_LocalRotation: {x: -0, y: -0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.44, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 3.98, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 4825793025202272}
   - {fileID: 4016017391021650}
@@ -1218,6 +1219,22 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114537800741249328
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1795979787452770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c2a8e35eb4e33047bae713cccae4806, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hero: 0
+  healthPower: 15
+  attackPower: 7
+  movement: 2
+  currentHealthPower: 0
 --- !u!137 &137882516236213190
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

@@ -115,13 +115,13 @@ ModelImporter:
     400106: Skeleton
     2100000: jaguar_skin
     4300000: JaguarModel
-    7400000: Skeleton|piratecat_jaguar_anim_@attack1
-    7400002: Skeleton|piratecat_jaguar_anim_@attack2
-    7400004: Skeleton|piratecat_jaguar_anim_@die
-    7400006: Skeleton|piratecat_jaguar_anim_@idle
-    7400008: Skeleton|piratecat_jaguar_anim_@idle_inactive
-    7400010: Skeleton|piratecat_jaguar_anim_@run
-    7400012: Skeleton|piratecat_jaguar_anim_@walk
+    7400000: JaguarAttack1
+    7400002: JaguarAttack2
+    7400004: JaguarDie
+    7400006: JaguarIdle
+    7400008: JaguarIdleInactive
+    7400010: JaguarRun
+    7400012: JaguarWalk
     9500000: //RootNode
     13700000: JaguarModel
   externalObjects: {}
@@ -152,7 +152,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Skeleton|piratecat_jaguar_anim_@attack1
+      name: JaguarAttack1
       takeName: Skeleton|piratecat_jaguar_anim_@attack1
       firstFrame: 0
       lastFrame: 71
@@ -180,7 +180,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_jaguar_anim_@attack2
+      name: JaguarAttack2
       takeName: Skeleton|piratecat_jaguar_anim_@attack2
       firstFrame: 0
       lastFrame: 71
@@ -208,7 +208,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_jaguar_anim_@die
+      name: JaguarDie
       takeName: Skeleton|piratecat_jaguar_anim_@die
       firstFrame: 0
       lastFrame: 105
@@ -236,7 +236,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_jaguar_anim_@idle
+      name: JaguarIdle
       takeName: Skeleton|piratecat_jaguar_anim_@idle
       firstFrame: 0
       lastFrame: 119
@@ -246,7 +246,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -264,7 +264,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_jaguar_anim_@idle_inactive
+      name: JaguarIdleInactive
       takeName: Skeleton|piratecat_jaguar_anim_@idle_inactive
       firstFrame: 0
       lastFrame: 300
@@ -292,7 +292,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_jaguar_anim_@run
+      name: JaguarRun
       takeName: Skeleton|piratecat_jaguar_anim_@run
       firstFrame: 0
       lastFrame: 33
@@ -302,7 +302,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -320,7 +320,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Skeleton|piratecat_jaguar_anim_@walk
+      name: JaguarWalk
       takeName: Skeleton|piratecat_jaguar_anim_@walk
       firstFrame: 0
       lastFrame: 30
@@ -330,7 +330,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
