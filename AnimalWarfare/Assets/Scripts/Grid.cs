@@ -6,14 +6,14 @@ public class Grid : MonoBehaviour {
 	public int gridWidth, gridHeight;
 	public float tileOffset, tileHeight;
 	public Tile prefab;
-	private Tile[, ] tiles;
+	public Tile[, ] tiles { get; private set; }
 
-	void Start () {
+	void Awake () {
 		tiles = new Tile[gridWidth, gridHeight];
 		for (int i = 0; i < gridWidth; i++) {
 			for (int j = 0; j < gridHeight; j++) {
 				Tile tile = Instantiate (prefab, new Vector3 ((i * 10) * (prefab.transform.localScale.x + tileOffset), tileHeight, (j * 10) *(prefab.transform.localScale.z + tileOffset)), Quaternion.identity);
-			//	tile.setLocation (i, j);
+				tile.SetPosition (i, j);
 				tile.transform.SetParent (this.transform);
 				tiles[i, j] = tile;
 			}
