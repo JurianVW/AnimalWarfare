@@ -2,15 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Selectable : MonoBehaviour {
+public class Selectable : MonoBehaviour
+{
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public Material deselectedMaterial, selectedMaterial;
+
+    void OnMouseOver()
+    {
+        this.GetComponent<Renderer>().material = selectedMaterial;
+    }
+
+    void OnMouseExit()
+    {
+        this.GetComponent<Renderer>().material = deselectedMaterial;
+    }
 }

@@ -4,13 +4,19 @@ using UnityEngine;
 
 public class Tile : MonoBehaviour {
 
-	public Material deselectedMaterial, selectedMaterial;
-
-	void OnMouseOver() {
-		this.GetComponent<Renderer>().material = selectedMaterial;
+	public Vector2 position;
+	public bool occupied;
+	public Animal animal;
+	
+	public void SetPosition(float x, float y){
+		this.position = new Vector2(x,y);
 	}
 
-	void OnMouseExit() {
-		this.GetComponent<Renderer>().material = deselectedMaterial;
-	}
+	public void SetOccupied(bool occupied){
+        this.occupied = occupied;
+    }
+
+    public void SetAnimal(Animal animal){
+        this.animal = animal;
+    }
 }
