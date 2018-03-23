@@ -1553,9 +1553,9 @@ MonoBehaviour:
   hero: 1
   healthPower: 125
   attackPower: 20
-  maxMovement: 2
+  maxMovement: 3
   currentHealthPower: 0
-  movementSpeed: 0
+  movementSpeed: 30
   moving: 0
 --- !u!137 &137757336109344296
 SkinnedMeshRenderer:
@@ -1571,7 +1571,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 0f08997ba1b2b24419c6a08aa2eb023f, type: 2}
+  - {fileID: 2100000, guid: 377ccda9bac322f4bad58935a7116125, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

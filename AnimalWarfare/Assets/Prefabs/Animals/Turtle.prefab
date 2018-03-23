@@ -1587,7 +1587,7 @@ MonoBehaviour:
   hero: 0
   healthPower: 20
   attackPower: 5
-  maxMovement: 1
+  maxMovement: 2
   currentHealthPower: 0
   movementSpeed: 10
   moving: 0

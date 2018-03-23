@@ -8,7 +8,7 @@ public class Selection : MonoBehaviour
     Tile currentSelection;
     Tile moveSelection;
     public TurnManager turnManager;
-    
+
     void Update()
     {
         if (Input.GetMouseButtonUp(0))
@@ -67,7 +67,7 @@ public class Selection : MonoBehaviour
                 Debug.Log("MoveSelection");
                 currentSelection.animal.Move(moveSelection);
             }
-            else if(currentSelection.animal.hero){
+            else if(currentSelection.animal.hero && !moveSelection.animal.hero){
                 switch (turnManager.currentPlayerNumber)
                 {
                     case 1:
