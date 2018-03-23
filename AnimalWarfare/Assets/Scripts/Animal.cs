@@ -21,20 +21,38 @@ public class Animal : MonoBehaviour
         if (moving)
         {
             transform.localPosition = Vector3.MoveTowards(this.transform.localPosition, Vector3.zero, (movementSpeed / 3) * Time.deltaTime);
-            if (this.transform.position == Vector3.zero) moving = false;
+            if (this.transform.localPosition == Vector3.zero){
+                Debug.Log("Triggered");
+                this.GetComponent<Animator>().SetBool("Run", false);
+                moving = false; 
+            } 
         }
     }
 
     public void Move(Tile targetTile)
     {
         Debug.Log("Move");
+        int range = 0;
         Tile currentTile = this.transform.GetComponentInParent<Tile>();
-        int range = Mathf.RoundToInt(Mathf.Abs((targetTile.position.x + targetTile.position.y) - (currentTile.position.x + currentTile.position.y)));
+        int xrange = (int)Mathf.Abs((targetTile.position.x - currentTile.position.x));
+        int yrange = (int)Mathf.Abs((currentTile.position.y - targetTile.position.y));
+        this.transform.LookAt(targetTile.transform);
+
+        if (xrange >= yrange)
+        {
+            range = xrange;
+        }
+        else{
+            range = yrange;
+        }
+
+        Debug.Log("Range: " + range);
         if (range <= currentMovement)
         {
             Debug.Log("Valid");
             if (currentTile.position != Vector2.zero)
             {
+                this.GetComponent<Animator>().SetBool("Run",true);
                 currentTile.SetAnimal(null);
                 targetTile.SetAnimal(this);
                 this.transform.SetParent(targetTile.transform);

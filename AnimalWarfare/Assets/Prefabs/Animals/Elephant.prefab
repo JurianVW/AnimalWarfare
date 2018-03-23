@@ -1553,8 +1553,10 @@ MonoBehaviour:
   hero: 1
   healthPower: 125
   attackPower: 20
-  movement: 2
+  maxMovement: 2
   currentHealthPower: 0
+  movementSpeed: 0
+  moving: 0
 --- !u!137 &137757336109344296
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
