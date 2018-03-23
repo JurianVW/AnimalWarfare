@@ -12,10 +12,10 @@ public class TurnManager : MonoBehaviour {
     public Grid grid;
 
     private List<Player> players;
-    private Player currentPlayer;
+    public Player currentPlayer {get; private set;}
 
     private int startNumber = 1;
-    private int currentPlayerNumber;
+    public int currentPlayerNumber {get; private set;}
 
     void Start () {
         players = new List<Player> ();

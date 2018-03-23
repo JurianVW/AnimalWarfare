@@ -10,6 +10,7 @@ public class Animal : MonoBehaviour
     public float movementSpeed;
     public bool moving = false;
     private float currentMovement;
+    private Player player;
 
     void Start()
     {
@@ -64,5 +65,9 @@ public class Animal : MonoBehaviour
     private bool validMovement(Vector2 current, Vector2 target)
     {
         return Mathf.Abs((target.x + target.y) - (current.x + current.y)) <= currentMovement;
+    }
+
+    public void SetPlayer(Player player){
+        this.player = player;
     }
 }

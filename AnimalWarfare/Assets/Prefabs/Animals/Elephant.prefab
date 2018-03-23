@@ -231,7 +231,7 @@ GameObject:
   - component: {fileID: 4048371613728466}
   - component: {fileID: 137757336109344296}
   m_Layer: 0
-  m_Name: ElephantModel
+  m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

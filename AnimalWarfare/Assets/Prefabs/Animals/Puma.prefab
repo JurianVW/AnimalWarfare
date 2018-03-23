@@ -653,7 +653,7 @@ GameObject:
   - component: {fileID: 4842261690180092}
   - component: {fileID: 137088730572335294}
   m_Layer: 0
-  m_Name: PumaModel
+  m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

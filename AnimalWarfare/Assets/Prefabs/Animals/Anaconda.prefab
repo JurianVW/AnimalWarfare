@@ -230,7 +230,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4128410236536792}
   m_Layer: 0
-  m_Name: piratecat_anaconda.qc_skeleton
+  m_Name: Skeleton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -367,7 +367,7 @@ GameObject:
   - component: {fileID: 4927470582436846}
   - component: {fileID: 137265108121298344}
   m_Layer: 0
-  m_Name: piratecat_anaconda_anaconda
+  m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

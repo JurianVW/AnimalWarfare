@@ -713,7 +713,7 @@ GameObject:
   - component: {fileID: 4794659157451316}
   - component: {fileID: 137788822021604794}
   m_Layer: 0
-  m_Name: LionessModel
+  m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

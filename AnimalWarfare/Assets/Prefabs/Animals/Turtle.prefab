@@ -773,7 +773,7 @@ GameObject:
   - component: {fileID: 4090414757704890}
   - component: {fileID: 137198764913684064}
   m_Layer: 0
-  m_Name: TurtleModel
+  m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

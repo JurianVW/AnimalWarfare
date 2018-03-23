@@ -1101,7 +1101,7 @@ GameObject:
   - component: {fileID: 4253209972217908}
   - component: {fileID: 137278779865697434}
   m_Layer: 0
-  m_Name: MonkeyModel
+  m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2801,8 +2801,10 @@ MonoBehaviour:
   hero: 0
   healthPower: 25
   attackPower: 6
-  movement: 2
+  maxMovement: 0
   currentHealthPower: 0
+  movementSpeed: 0
+  moving: 0
 --- !u!137 &137278779865697434
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

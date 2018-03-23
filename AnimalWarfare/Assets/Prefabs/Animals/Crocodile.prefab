@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4717573685005842}
   - component: {fileID: 137167837067736448}
   m_Layer: 0
-  m_Name: CrocodileModel
+  m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

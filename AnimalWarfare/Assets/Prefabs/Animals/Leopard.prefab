@@ -488,7 +488,7 @@ GameObject:
   - component: {fileID: 4163993974324268}
   - component: {fileID: 137587371195129494}
   m_Layer: 0
-  m_Name: LeopardModel
+  m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1784,8 +1784,10 @@ MonoBehaviour:
   hero: 0
   healthPower: 50
   attackPower: 10
-  movement: 4
+  maxMovement: 0
   currentHealthPower: 0
+  movementSpeed: 0
+  moving: 0
 --- !u!137 &137587371195129494
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

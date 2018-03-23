@@ -321,7 +321,7 @@ GameObject:
   - component: {fileID: 4052485288565436}
   - component: {fileID: 137515337881989310}
   m_Layer: 0
-  m_Name: LynxModel
+  m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1320,8 +1320,10 @@ MonoBehaviour:
   hero: 0
   healthPower: 50
   attackPower: 10
-  movement: 4
+  maxMovement: 0
   currentHealthPower: 0
+  movementSpeed: 0
+  moving: 0
 --- !u!137 &137515337881989310
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

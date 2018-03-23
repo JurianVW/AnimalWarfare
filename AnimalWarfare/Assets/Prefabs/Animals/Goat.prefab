@@ -578,7 +578,7 @@ GameObject:
   - component: {fileID: 4825793025202272}
   - component: {fileID: 137882516236213190}
   m_Layer: 0
-  m_Name: GoatModel
+  m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -396,7 +396,7 @@ GameObject:
   - component: {fileID: 4046217172649060}
   - component: {fileID: 137115730588145334}
   m_Layer: 0
-  m_Name: RhinoModel
+  m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1552,8 +1552,10 @@ MonoBehaviour:
   hero: 1
   healthPower: 100
   attackPower: 30
-  movement: 3
+  maxMovement: 0
   currentHealthPower: 0
+  movementSpeed: 0
+  moving: 0
 --- !u!137 &137115730588145334
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

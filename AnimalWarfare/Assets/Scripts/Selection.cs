@@ -7,7 +7,8 @@ public class Selection : MonoBehaviour
 
     Tile currentSelection;
     Tile moveSelection;
-
+    public TurnManager turnManager;
+    
     void Update()
     {
         if (Input.GetMouseButtonUp(0))
@@ -65,6 +66,21 @@ public class Selection : MonoBehaviour
             {
                 Debug.Log("MoveSelection");
                 currentSelection.animal.Move(moveSelection);
+            }
+            else if(currentSelection.animal.hero){
+                switch (turnManager.currentPlayerNumber)
+                {
+                    case 1:
+                        moveSelection.animal.GetComponentInChildren<Renderer>().material.color = Color.red;
+                        moveSelection.animal.SetPlayer(turnManager.currentPlayer);
+                    break;
+                    case 2:
+                        moveSelection.animal.GetComponentInChildren<Renderer>().material.color = Color.blue;
+                        moveSelection.animal.SetPlayer(turnManager.currentPlayer);
+                    break;
+                    default:
+                    break;
+                }
             }
         }
         DeselectAll();
