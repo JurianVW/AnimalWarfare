@@ -36,7 +36,6 @@ public class Animal : MonoBehaviour
         Tile currentTile = this.transform.GetComponentInParent<Tile>();
         int xrange = (int)Mathf.Abs((targetTile.position.x - currentTile.position.x));
         int yrange = (int)Mathf.Abs((currentTile.position.y - targetTile.position.y));
-        this.transform.LookAt(targetTile.transform);
 
         if (xrange >= yrange)
         {
@@ -53,6 +52,7 @@ public class Animal : MonoBehaviour
             if (currentTile.position != Vector2.zero)
             {
                 this.GetComponent<Animator>().SetBool("Run",true);
+                this.transform.LookAt(targetTile.transform);
                 currentTile.SetAnimal(null);
                 targetTile.SetAnimal(this);
                 this.transform.SetParent(targetTile.transform);
