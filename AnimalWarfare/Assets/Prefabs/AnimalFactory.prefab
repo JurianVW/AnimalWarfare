@@ -53,3 +53,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grid: {fileID: 0}
   prefab: {fileID: 0}
+  spawnAmmount: 1
