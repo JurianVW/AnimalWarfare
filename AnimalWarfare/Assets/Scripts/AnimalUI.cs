@@ -5,12 +5,29 @@ using UnityEngine.UI;
 
 public class AnimalUI : MonoBehaviour
 {
-    public GameObject animalUIPosition;
-    public Text animalNameText;
+    public Text nameText;
+    public Slider HPSlider;
+    public Text APText;
+    public Text currentRangeText;
+    public Text maxRangeText;
 
-    void Upade()
+
+    private Animal myAnimal;
+    void OnEnable()
     {
-        var wantedPos = Camera.main.WorldToViewportPoint(animalUIPosition.transform.position);
-        animalNameText.transform.position = wantedPos;
+        myAnimal = transform.GetComponentInParent<Animal>();
+
+        nameText.text = myAnimal.animalName;
+        HPSlider.maxValue = myAnimal.maxHealthPower;
+        maxRangeText.text = myAnimal.maxMovement.ToString();
+
+        Animal.AnimalStatsChange += UpdateUI;
+    }
+
+    private void UpdateUI()
+    {
+        HPSlider.value = myAnimal.currentHealthPower;
+        APText.text = myAnimal.currentAttackPower.ToString();
+        currentRangeText.text = myAnimal.currentMovement.ToString();
     }
 }

@@ -4,17 +4,28 @@ using UnityEngine;
 
 public class Animal : MonoBehaviour
 {
+    public string animalName;
     public bool hero;
-    public int healthPower, attackPower, maxMovement;
-    public int currentHealthPower;
+    public int maxHealthPower, maxAttackPower, maxMovement;
+    [Tooltip("Real animal speed in km/h")]
     public float movementSpeed;
-    public bool moving = false;
-    private float currentMovement;
+    
+    public int currentHealthPower {get; private set;}
+    public int currentAttackPower {get; private set;}
+    public float currentMovement {get; private set;}
     private Player player;
+
+    private bool moving = false;
+
+    public delegate void animalChange();
+    public static event animalChange AnimalStatsChange;
 
     void Start()
     {
+        currentHealthPower = maxHealthPower;
+        currentAttackPower = maxAttackPower;
         currentMovement = maxMovement;
+        StatsChange();
     }
 
     void Update()
@@ -22,11 +33,12 @@ public class Animal : MonoBehaviour
         if (moving)
         {
             transform.localPosition = Vector3.MoveTowards(this.transform.localPosition, Vector3.zero, (movementSpeed / 3) * Time.deltaTime);
-            if (this.transform.localPosition == Vector3.zero){
+            if (this.transform.localPosition == Vector3.zero)
+            {
                 Debug.Log("Triggered");
                 this.GetComponent<Animator>().SetBool("Run", false);
-                moving = false; 
-            } 
+                moving = false;
+            }
         }
     }
 
@@ -42,7 +54,8 @@ public class Animal : MonoBehaviour
         {
             range = xrange;
         }
-        else{
+        else
+        {
             range = yrange;
         }
 
@@ -58,6 +71,7 @@ public class Animal : MonoBehaviour
                 targetTile.SetAnimal(this);
                 this.transform.SetParent(targetTile.transform);
                 moving = true;
+                StatsChange();
             }
         }
     }
@@ -69,5 +83,13 @@ public class Animal : MonoBehaviour
 
     public void SetPlayer(Player player){
         this.player = player;
+    }
+
+    private void StatsChange()
+    {
+        if (AnimalStatsChange != null)
+        {
+            AnimalStatsChange();
+        }
     }
 }
