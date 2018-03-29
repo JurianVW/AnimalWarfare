@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Tile : MonoBehaviour
 {
-    public Vector2 position { get; private set; }
-    public bool occupied { get; private set; }
+    public Vector2 position;
+    public bool occupied;
     public Animal animal { get; private set; }
 
     public void SetPosition(float x, float y)

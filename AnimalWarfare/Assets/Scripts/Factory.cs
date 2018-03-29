@@ -57,10 +57,4 @@ public class Factory : MonoBehaviour
             SpawnAnimal(tile, rotation);
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }

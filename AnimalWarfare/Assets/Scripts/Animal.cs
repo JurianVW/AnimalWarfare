@@ -7,12 +7,16 @@ public class Animal : MonoBehaviour
     public string animalName;
     public bool hero;
     public int maxHealthPower, maxAttackPower, maxMovement;
+
     [Tooltip("Real animal speed in km/h")]
     public float movementSpeed;
-    
-    public int currentHealthPower {get; private set;}
-    public int currentAttackPower {get; private set;}
-    public float currentMovement {get; private set;}
+
+    [Space(10)]
+    public bool selected = false;
+
+    public int currentHealthPower { get; private set; }
+    public int currentAttackPower { get; private set; }
+    public int currentMovement { get; private set; }
     private Player player;
 
     private bool moving = false;
@@ -20,12 +24,18 @@ public class Animal : MonoBehaviour
     public delegate void animalChange();
     public static event animalChange AnimalStatsChange;
 
+
     void Start()
     {
         currentHealthPower = maxHealthPower;
         currentAttackPower = maxAttackPower;
         currentMovement = maxMovement;
+    }
+
+    void OnEnable()
+    {
         StatsChange();
+        SetSelected(false);
     }
 
     void Update()
@@ -42,47 +52,31 @@ public class Animal : MonoBehaviour
         }
     }
 
-    public void Move(Tile targetTile)
+    public void Move(Tile targetTile, int movementCost)
     {
-        Debug.Log("Move");
-        int range = 0;
         Tile currentTile = this.transform.GetComponentInParent<Tile>();
-        int xrange = (int)Mathf.Abs((targetTile.position.x - currentTile.position.x));
-        int yrange = (int)Mathf.Abs((currentTile.position.y - targetTile.position.y));
-
-        if (xrange >= yrange)
+        if (currentTile.position != Vector2.zero)
         {
-            range = xrange;
-        }
-        else
-        {
-            range = yrange;
-        }
-
-        Debug.Log("Range: " + range);
-        if (range <= currentMovement)
-        {
-            Debug.Log("Valid");
-            if (currentTile.position != Vector2.zero)
-            {
-                this.GetComponent<Animator>().SetBool("Run",true);
-                this.transform.LookAt(targetTile.transform);
-                currentTile.SetAnimal(null);
-                targetTile.SetAnimal(this);
-                this.transform.SetParent(targetTile.transform);
-                moving = true;
-                StatsChange();
-            }
+            this.GetComponent<Animator>().SetBool("Run", true);
+            this.transform.LookAt(targetTile.transform);
+            currentTile.SetAnimal(null);
+            targetTile.SetAnimal(this);
+            this.transform.SetParent(targetTile.transform);
+            moving = true;
+            currentMovement -= movementCost;
+            StatsChange();
         }
     }
 
-    private bool validMovement(Vector2 current, Vector2 target)
+    public void SetPlayer(Player player)
     {
-        return Mathf.Abs((target.x + target.y) - (current.x + current.y)) <= currentMovement;
+        this.player = player;
     }
 
-    public void SetPlayer(Player player){
-        this.player = player;
+    public void SetSelected(bool selected)
+    {
+        GameObject animalUI = this.GetComponentInChildren<AnimalUI>(true).gameObject;
+        if (animalUI != null) animalUI.SetActive(selected);
     }
 
     private void StatsChange()
@@ -92,4 +86,5 @@ public class Animal : MonoBehaviour
             AnimalStatsChange();
         }
     }
+
 }
