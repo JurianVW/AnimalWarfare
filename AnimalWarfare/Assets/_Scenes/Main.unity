@@ -995,7 +995,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridWidth: 15
   gridHeight: 9
-  tileOffset: 0
+  tileOffset: 0.005
   tileHeight: 0.25
   prefab: {fileID: 114735855893426766, guid: 31845d647f20cf04497f88b4b515319a, type: 2}
 --- !u!4 &941437824
@@ -1947,6 +1947,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114863324022058712, guid: e1aed590c6a605f48a04ec52b95823d4,
+        type: 2}
+      propertyPath: grid
+      value: 
+      objectReference: {fileID: 941437823}
+    - target: {fileID: 114863324022058712, guid: e1aed590c6a605f48a04ec52b95823d4,
+        type: 2}
+      propertyPath: turnManager
+      value: 
+      objectReference: {fileID: 1150365315}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e1aed590c6a605f48a04ec52b95823d4, type: 2}
   m_IsPrefabParent: 0
