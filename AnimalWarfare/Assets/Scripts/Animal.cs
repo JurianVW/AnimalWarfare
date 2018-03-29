@@ -68,11 +68,29 @@ public class Animal : MonoBehaviour
         }
     }
 
+    public void Attack(Animal targetAnimal){
+        this.transform.LookAt(targetAnimal.transform.parent);
+        this.GetComponent<Animator>().SetBool("Attack", true);
+        this.GetComponent<Animator>().SetBool("Attack1", true);
+        targetAnimal.IncomingDamage(this.currentAttackPower);
+    }
+
+    public void IncomingDamage(int attackPower){
+        this.currentHealthPower -= attackPower;
+        if (this.currentHealthPower <= 0)
+        {
+            this.GetComponent<Animator>().SetBool("Die", true);
+        }
+    }
+
     public void SetPlayer(Player player)
     {
         this.player = player;
     }
-
+    public Player GetPlayer()
+    {
+        return player;
+    }
     public void SetSelected(bool selected)
     {
         GameObject animalUI = this.GetComponentInChildren<AnimalUI>(true).gameObject;

@@ -91,6 +91,16 @@ public class Selection : MonoBehaviour
                     }
                 }
             }
+            else if (!currentSelection.animal.hero){
+                if (moveSelection.animal.GetPlayer() == null)
+                {
+                    currentSelection.animal.Attack(moveSelection.animal);
+                }
+                else if (moveSelection.animal.GetPlayer().playerId != currentSelection.animal.GetPlayer().playerId)
+                {
+                    currentSelection.animal.Attack(moveSelection.animal);
+                }
+            }
         }
         DeselectAll();
     }

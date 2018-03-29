@@ -28,6 +28,7 @@ public class TurnManager : MonoBehaviour {
             player.transform.SetParent (this.transform);
             player.name = "Player" + (i + 1);
             players.Add (player);
+            player.playerId = i + 1;
         }
 
         if (players.Count != 0) {
