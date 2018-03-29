@@ -23,7 +23,7 @@ public class Animal : MonoBehaviour
 
     public delegate void animalChange();
     public static event animalChange AnimalStatsChange;
-
+    public bool isDead = false;
 
     void Start()
     {
@@ -80,6 +80,7 @@ public class Animal : MonoBehaviour
         if (this.currentHealthPower <= 0)
         {
             this.GetComponent<Animator>().SetBool("Die", true);
+            isDead = true;
         }
     }
 

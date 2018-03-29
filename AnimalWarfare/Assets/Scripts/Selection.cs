@@ -49,11 +49,17 @@ public class Selection : MonoBehaviour
         {
             if (currentSelection.animal != null)
             {
-                availableTiles = grid.CalculatePossibleTiles(currentSelection, currentSelection.animal.currentMovement);
-                currentSelection.transform.GetComponent<Selectable>().Select();
-                foreach (Tile tile in availableTiles.Keys)
+                if (!currentSelection.animal.isDead)
                 {
-                    tile.GetComponent<Selectable>().Select();
+                    availableTiles = grid.CalculatePossibleTiles(currentSelection, currentSelection.animal.currentMovement);
+                    currentSelection.transform.GetComponent<Selectable>().Select();
+                    foreach (Tile tile in availableTiles.Keys)
+                    {
+                        tile.GetComponent<Selectable>().Select();
+                    }
+                }
+                else{
+                    currentSelection = null;
                 }
             }
             else
@@ -91,7 +97,8 @@ public class Selection : MonoBehaviour
                     }
                 }
             }
-            else if (!currentSelection.animal.hero){
+            else if (!currentSelection.animal.hero)
+            {
                 if (moveSelection.animal.GetPlayer() == null)
                 {
                     currentSelection.animal.Attack(moveSelection.animal);
