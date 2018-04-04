@@ -42,7 +42,7 @@ public class Factory : MonoBehaviour
 
     void SpawnAnimal(Tile tile, Vector3 rotation)
     {
-        tile = grid.tiles[(int)Mathf.Round(Random.Range(1, grid.gridWidth - 1)), (int)Mathf.Round(Random.Range(0, grid.gridHeight))];
+        tile = grid.GetTile(new Vector2(Mathf.Round(Random.Range(1, grid.gridWidth - 1)), Mathf.Round(Random.Range(0, grid.gridHeight))));
         if (!tile.occupied)
         {
             Animal animal = Instantiate(prefab);

@@ -2,16 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Animal : MonoBehaviour
-{
+public class Animal : MonoBehaviour {
     public string animalName;
     public bool hero;
     public int maxHealthPower, maxAttackPower, maxMovement;
 
-    [Tooltip("Real animal speed in km/h")]
+    [Tooltip ("Real animal speed in km/h")]
     public float movementSpeed;
 
-    [Space(10)]
+    [Space (10)]
     public bool selected = false;
 
     public int currentHealthPower { get; private set; }
@@ -21,89 +20,80 @@ public class Animal : MonoBehaviour
 
     private bool moving = false;
 
-    public delegate void animalChange();
+    public delegate void animalChange ();
     public static event animalChange AnimalStatsChange;
     public bool isDead = false;
 
-    void Start()
-    {
+    void Start () {
         currentHealthPower = maxHealthPower;
         currentAttackPower = maxAttackPower;
         currentMovement = maxMovement;
     }
 
-    void OnEnable()
-    {
-        StatsChange();
-        SetSelected(false);
+    void OnEnable () {
+        StatsChange ();
+        SetSelected (false);
     }
 
-    void Update()
-    {
-        if (moving)
-        {
-            transform.localPosition = Vector3.MoveTowards(this.transform.localPosition, Vector3.zero, (movementSpeed / 3) * Time.deltaTime);
-            if (this.transform.localPosition == Vector3.zero)
-            {
-                Debug.Log("Triggered");
-                this.GetComponent<Animator>().SetBool("Run", false);
+    void Update () {
+        if (moving) {
+            transform.localPosition = Vector3.MoveTowards (this.transform.localPosition, Vector3.zero, (movementSpeed / 3) * Time.deltaTime);
+            if (this.transform.localPosition == Vector3.zero) {
+                Debug.Log ("Triggered");
+                this.GetComponent<Animator> ().SetBool ("Run", false);
                 moving = false;
             }
         }
     }
 
-    public void Move(Tile targetTile, int movementCost)
-    {
-        Tile currentTile = this.transform.GetComponentInParent<Tile>();
-        if (currentTile.position != Vector2.zero)
-        {
-            this.GetComponent<Animator>().SetBool("Run", true);
-            this.transform.LookAt(targetTile.transform);
-            currentTile.SetAnimal(null);
-            targetTile.SetAnimal(this);
-            this.transform.SetParent(targetTile.transform);
+    public void Move (Tile targetTile, int movementCost) {
+        Tile currentTile = this.transform.GetComponentInParent<Tile> ();
+        if (currentTile.position != Vector2.zero) {
+            this.GetComponent<Animator> ().SetBool ("Run", true);
+            this.transform.LookAt (targetTile.transform);
+            currentTile.SetAnimal (null);
+            targetTile.SetAnimal (this);
+            this.transform.SetParent (targetTile.transform);
             moving = true;
             currentMovement -= movementCost;
-            StatsChange();
+            StatsChange ();
         }
     }
 
-    public void Attack(Animal targetAnimal){
-        this.transform.LookAt(targetAnimal.transform.parent);
-        this.GetComponent<Animator>().SetBool("Attack", true);
-        this.GetComponent<Animator>().SetBool("Attack1", true);
-        targetAnimal.IncomingDamage(this.currentAttackPower);
+    public void Attack (Animal targetAnimal) {
+        this.transform.LookAt (targetAnimal.transform.parent);
+        this.GetComponent<Animator> ().SetBool ("Attack", true);
+        this.GetComponent<Animator> ().SetBool ("Attack1", true);
+        targetAnimal.IncomingDamage (this.currentAttackPower);
     }
 
-    public void IncomingDamage(int attackPower){
+    public void IncomingDamage (int attackPower) {
         this.currentHealthPower -= attackPower;
-        if (this.currentHealthPower <= 0)
-        {
-            this.GetComponent<Animator>().SetBool("Die", true);
+        if (this.currentHealthPower <= 0) {
+            this.GetComponent<Animator> ().SetBool ("Die", true);
             isDead = true;
         }
     }
 
-    public void SetPlayer(Player player)
-    {
+    public void EndTurn () {
+        currentMovement = maxMovement;
+        StatsChange ();
+    }
+
+    public void SetPlayer (Player player) {
         this.player = player;
     }
-    public Player GetPlayer()
-    {
+    public Player GetPlayer () {
         return player;
     }
-    public void SetSelected(bool selected)
-    {
-        GameObject animalUI = this.GetComponentInChildren<AnimalUI>(true).gameObject;
-        if (animalUI != null) animalUI.SetActive(selected);
+    public void SetSelected (bool selected) {
+        GameObject animalUI = this.GetComponentInChildren<AnimalUI> (true).gameObject;
+        if (animalUI != null) animalUI.SetActive (selected);
     }
 
-    private void StatsChange()
-    {
-        if (AnimalStatsChange != null)
-        {
-            AnimalStatsChange();
+    private void StatsChange () {
+        if (AnimalStatsChange != null) {
+            AnimalStatsChange ();
         }
     }
-
 }

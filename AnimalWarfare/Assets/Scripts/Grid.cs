@@ -26,6 +26,17 @@ public class Grid : MonoBehaviour
         this.transform.position = new Vector3(-(tilePosition.x / 2), 0, -(tilePosition.z / 2));
     }
 
+    public Tile GetTile(Vector2 position){
+        return tiles[(int)position.x,(int) position.y];
+    }
+
+    public void EndTurn(){
+        foreach(Tile t in tiles){
+            if(t.animal!= null){t.animal.EndTurn();}
+            
+        }
+    }
+
     // https://www.raywenderlich.com/4946/introduction-to-a-pathfinding
     public Dictionary<Tile, int> CalculatePossibleTiles(Tile startingTile, int range)
     {
