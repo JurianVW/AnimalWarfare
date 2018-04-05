@@ -54,16 +54,17 @@ public class TurnManager : MonoBehaviour {
     }
 
     public void EndTurn () {
-        currentPlayerNumber++;
+        Tile tile = animalTurnManager.GetNextAnimal().GetComponentInParent<Tile>();
+        selection.SetCurrentSelection(tile);
+        /*currentPlayerNumber++;
         if (currentPlayerNumber >= players.Count) {
             currentPlayerNumber = 0;
-        }
+        }*/
         currentPlayer.gameObject.SetActive (false);
-        currentPlayer = players[currentPlayerNumber];
+        currentPlayer = tile.animal.GetPlayer();
         currentPlayer.gameObject.SetActive (true);
 
         grid.EndTurn();
-        selection.SetCurrentSelection(animalTurnManager.GetNextAnimal().GetComponentInParent<Tile>());
     }
 
     private void SpawnHeroes () {

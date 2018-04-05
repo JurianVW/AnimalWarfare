@@ -100,7 +100,7 @@ public class Selection : MonoBehaviour
                 {
                     if (grid.GetNeighbours(currentSelection).Contains(newSelection))
                     {
-                        switch (turnManager.currentPlayerNumber + 1)
+                        switch (turnManager.currentPlayer.playerId)
                         {
                             case 1:
                                 newSelection.animal.GetComponentInChildren<Renderer>().material.color = Color.red;
