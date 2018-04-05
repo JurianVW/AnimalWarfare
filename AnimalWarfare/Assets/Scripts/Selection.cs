@@ -82,6 +82,8 @@ public class Selection : MonoBehaviour
             {
                 currentSelection.animal.Move(newSelection, availableTiles[newSelection]);
                 currentSelection = newSelection;
+                DeselectAll();
+                OnCurrentSelection();
             }
             else if (currentSelection.animal.hero && newSelection.animal != null)
             {
@@ -96,12 +98,14 @@ public class Selection : MonoBehaviour
                                 newSelection.animal.SetPlayer(turnManager.currentPlayer);
                                 turnManager.EndTurn();
                                 turnManager.animalTurnManager.AddAnimal(newSelection.animal);
+                                DeselectAll();
                                 break;
                             case 2:
                                 newSelection.animal.GetComponentInChildren<Renderer>().material.color = Color.blue;
                                 newSelection.animal.SetPlayer(turnManager.currentPlayer);
                                 turnManager.EndTurn();
                                 turnManager.animalTurnManager.AddAnimal(newSelection.animal);
+                                DeselectAll();
                                 break;
                             default:
                                 break;
@@ -122,17 +126,13 @@ public class Selection : MonoBehaviour
                     turnManager.EndTurn();
                 }
             }
+            
+            newSelection = null;
         }
-        DeselectAll();
     }
 
     private void DeselectAll()
     {
-        if (currentSelection != null) currentSelection.transform.GetComponent<Selectable>().Deselect();
-        if (newSelection != null) newSelection.transform.GetComponent<Selectable>().Deselect();
-        newSelection = null;
-        //currentSelection = null;
-
         if (availableTiles != null)
         {
             foreach (Tile tile in availableTiles.Keys)
