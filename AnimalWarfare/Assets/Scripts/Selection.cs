@@ -15,6 +15,7 @@ public class Selection : MonoBehaviour
     public void SetCurrentSelection(Tile tile)
     {
         currentSelection = tile;
+        tile.GetComponent<Selectable>().Current();
         tileChanged = true;
         Debug.Log(tile);
     }
