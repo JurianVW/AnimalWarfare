@@ -1617,6 +1617,7 @@ MonoBehaviour:
   maxMovement: 2
   movementSpeed: 15
   selected: 0
+  isDead: 0
 --- !u!137 &137265108121298344
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

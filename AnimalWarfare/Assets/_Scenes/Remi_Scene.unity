@@ -1006,6 +1006,10 @@ MonoBehaviour:
   playerAmount: 2
   prefab: {fileID: 114853780942689732, guid: 0d0f6eecbac26ea40b210d122ad0beb0, type: 2}
   grid: {fileID: 941437823}
+  leftHero: {fileID: 0}
+  rightHero: {fileID: 0}
+  leftHeroUI: {fileID: 0}
+  rightHeroUI: {fileID: 0}
 --- !u!4 &1150365316
 Transform:
   m_ObjectHideFlags: 0
