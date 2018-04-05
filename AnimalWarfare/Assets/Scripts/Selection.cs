@@ -118,17 +118,12 @@ public class Selection : MonoBehaviour
                         turnManager.EndTurn();
                     }
                 }
-            }
-            else if (!currentSelection.animal.hero)
-            {
-                if (newSelection.animal.GetPlayer() == null)
-                {
-                    currentSelection.animal.Attack(newSelection.animal);
+            } else if (!currentSelection.animal.hero) {
+                if (newSelection.animal.GetPlayer () == null) {
+                    currentSelection.animal.Attack (true, newSelection.animal);
                     turnManager.EndTurn();
-                }
-                else if (newSelection.animal.GetPlayer().playerId != currentSelection.animal.GetPlayer().playerId)
-                {
-                    currentSelection.animal.Attack(newSelection.animal);
+                } else if (newSelection.animal.GetPlayer ().playerId != currentSelection.animal.GetPlayer ().playerId) {
+                    currentSelection.animal.Attack (true, newSelection.animal);
                     turnManager.EndTurn();
                 }
             }
