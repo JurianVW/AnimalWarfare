@@ -12,10 +12,10 @@ public class AnimalTurnManager : MonoBehaviour
     public delegate void queueChange();
     public static event queueChange AnimalQueueChange;
 
-    public void addAnimal(Animal hero)
+    public void AddAnimal(Animal animal)
     {
-        animalQueue.Add(hero);
-        QueueChange();
+        animalQueue.Add(animal);
+        if(animalQueue.Count > 1)   QueueChange();
     }
 
     public Animal GetStartingAnimal()

@@ -12,28 +12,29 @@ public class AnimalQueue : MonoBehaviour
 
     void Start()
     {
-        foreach (GameObject go in animalPanels)
-        {
-            go.GetComponent<Image>().color = new Color(1, 0, 0, 0.5f);
-        }
         AnimalTurnManager.AnimalQueueChange += UpdateUI;
-        UpdateUI();
     }
 
     void UpdateUI()
     {
+        int count = 0;
         for (int i = 0; i < 5; i++)
         {
-            if (animalTurnManager.animalQueue.Count > i)
+            int index = animalTurnManager.currentAnimal + i;
+
+            if (index >= animalTurnManager.animalQueue.Count)
             {
-                Animal animal = animalTurnManager.animalQueue[i];
-                if (animal != null)
-                {
-                    Color color = animal.GetPlayer().playerColor;
-                    color.a = 0.5f;
-                    animalPanels[i].GetComponent<Image>().color = color;
-                    animalPanels[i].GetComponentInChildren<Text>().text = animal.animalName;
-                }
+                index = count;
+                count++;
+                if(count>= animalTurnManager.animalQueue.Count) count = 0;
+            }
+            Animal animal = animalTurnManager.animalQueue[index];
+            if (animal != null)
+            {
+                Color color = animal.GetPlayer().playerColor;
+                color.a = 0.5f;
+                animalPanels[i].GetComponent<Image>().color = color;
+                animalPanels[i].GetComponentInChildren<Text>().text = animal.animalName;
             }
         }
     }

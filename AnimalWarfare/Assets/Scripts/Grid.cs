@@ -33,7 +33,7 @@ public class Grid : MonoBehaviour
     public void EndTurn(){
         foreach(Tile t in tiles){
             if(t.animal!= null){t.animal.EndTurn();}
-            
+            t.GetComponent<Selectable>().Deselect();
         }
     }
 
@@ -97,20 +97,6 @@ public class Grid : MonoBehaviour
         }
         return neighbours;
     }
-
-   /* Maybe will use this to make animal walk a path and not straight to target 
-   private class Node
-    {
-        public Node(Tile tile, int gCost, int hCost)
-        {
-            this.tile = tile;
-            this.gCost = gCost;
-        }
-        public int gCost; //Current movement
-        public int hCost; //Estimated 
-        public int fCost { get { return hCost + gCost; } }
-        public Tile tile; //The tile
-    }*/
 
     public class TileMovement
     {
