@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44824654, g: 0.49827242, b: 0.5755816, a: 1}
+  m_IndirectSpecularColor: {r: 0.44824702, g: 0.49827307, b: 0.575583, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -4014,7 +4014,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2020083373}
-  - component: {fileID: 2020083374}
   m_Layer: 0
   m_Name: GameLogic
   m_TagString: Untagged
@@ -4037,18 +4036,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2020083374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2020083372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 344754466e40c0643a50fe61161338f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  turnManager: {fileID: 1150365315}
 --- !u!4 &2037866309 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4337302436186112, guid: 637fb4b835c1c494c8212a64cf4c5c34,
