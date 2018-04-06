@@ -28,7 +28,16 @@ public class Selection : MonoBehaviour
         }
         if (Input.GetMouseButtonUp(0))
         {
-            Debug.Log("Click");
+            OnMouseClick(true);
+        }
+        else if (Input.GetMouseButtonUp(1))
+        {
+            OnMouseClick(false);
+        }
+    }
+
+    public void OnMouseClick(bool button){
+        Debug.Log("Click");
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
@@ -39,13 +48,11 @@ public class Selection : MonoBehaviour
                     {
                         Debug.Log("Click new");
                         newSelection = hit.collider.GetComponentInParent<Tile>();
-                        OnNewSelection();
+                        OnNewSelection(button);
                     }
                 }
             }
-        }
     }
-
     public void OnCurrentSelection()
     {
         if (currentSelection != null)
@@ -72,7 +79,7 @@ public class Selection : MonoBehaviour
         }
     }
 
-    private void OnNewSelection()
+    private void OnNewSelection(bool normalAttack)
     {
         Debug.Log(currentSelection);
         Debug.Log(newSelection);
@@ -117,16 +124,16 @@ public class Selection : MonoBehaviour
             {
                 if (newSelection.animal.GetPlayer() == null)
                 {
-                    currentSelection.animal.Attack(true, newSelection.animal);
+                    currentSelection.animal.Attack(normalAttack, newSelection.animal);
                     turnManager.EndTurn();
                 }
                 else if (newSelection.animal.GetPlayer().playerId != currentSelection.animal.GetPlayer().playerId)
                 {
-                    currentSelection.animal.Attack(true, newSelection.animal);
+                    currentSelection.animal.Attack(normalAttack, newSelection.animal);
                     turnManager.EndTurn();
                 }
             }
-            
+
             newSelection = null;
         }
     }
