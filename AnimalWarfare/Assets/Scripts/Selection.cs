@@ -61,6 +61,7 @@ public class Selection : MonoBehaviour
             {
                 if (!currentSelection.animal.isDead && currentSelection.animal.GetPlayer() == turnManager.currentPlayer)
                 {
+                    currentSelection.GetComponent<Selectable>().Current();
                     availableTiles = grid.CalculatePossibleTiles(currentSelection, currentSelection.animal.currentMovement);
                     foreach (Tile tile in availableTiles.Keys)
                     {
@@ -87,6 +88,7 @@ public class Selection : MonoBehaviour
         {
             if (!newSelection.occupied && availableTiles.ContainsKey(newSelection))
             {
+                currentSelection.GetComponent<Selectable>().Deselect();
                 currentSelection.animal.Move(newSelection, availableTiles[newSelection]);
                 currentSelection = newSelection;
                 DeselectAll();
@@ -133,7 +135,6 @@ public class Selection : MonoBehaviour
                     turnManager.EndTurn();
                 }
             }
-
             newSelection = null;
         }
     }

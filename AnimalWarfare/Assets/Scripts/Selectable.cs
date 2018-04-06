@@ -6,9 +6,11 @@ public class Selectable : MonoBehaviour
 {
     public Material deselectedMaterial, selectedMaterial, hoverMaterial;
     bool selected = false;
+    bool current = false;
     Material standardMaterial;
-   
-    void Start() { 
+
+    void Start()
+    {
     }
 
     void OnMouseOver()
@@ -19,13 +21,19 @@ public class Selectable : MonoBehaviour
 
     void OnMouseExit()
     {
-        if (!selected)
+        if (current)
+        {
+            this.GetComponent<Renderer>().material = hoverMaterial;
+            AnimalSelection(false);
+        }
+        else if (!selected)
         {
             this.GetComponent<Renderer>().material = deselectedMaterial;
             AnimalSelection(false);
         }
-        else{
-             this.GetComponent<Renderer>().material = selectedMaterial;
+        else
+        {
+            this.GetComponent<Renderer>().material = selectedMaterial;
         }
     }
 
@@ -39,8 +47,15 @@ public class Selectable : MonoBehaviour
     public void Deselect()
     {
         selected = false;
+        current = false;
         this.GetComponent<Renderer>().material = deselectedMaterial;
         AnimalSelection(false);
+    }
+
+    public void Current()
+    {
+        current = true;
+        this.GetComponent<Renderer>().material = hoverMaterial;
     }
 
     private void AnimalSelection(bool selected)
