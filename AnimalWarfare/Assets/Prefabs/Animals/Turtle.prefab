@@ -2252,7 +2252,7 @@ MonoBehaviour:
   maxHealthPower: 20
   maxAttackPower: 20
   maxMovement: 2
-  movementSpeed: 10
+  movementSpeed: 20
   selected: 0
   isDead: 0
   normalAttack: {fileID: 114488629327300066}

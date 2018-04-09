@@ -13,6 +13,7 @@ public class AnimalQueue : MonoBehaviour
     void Start()
     {
         AnimalTurnManager.AnimalQueueChange += UpdateUI;
+        UpdateUI();
     }
 
     void UpdateUI()

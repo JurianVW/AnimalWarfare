@@ -9,7 +9,7 @@ public class Factory : MonoBehaviour
     public int spawnAmmount = 1;
     void Start()
     {
-        Tile tile = null;
+        Tile tile = grid.animalSpawnTile;
         //Add move towards position from out of screen
         for (int i = 0; i < spawnAmmount; i++)
         {
@@ -42,15 +42,17 @@ public class Factory : MonoBehaviour
 
     void SpawnAnimal(Tile tile, Vector3 rotation)
     {
-        tile = grid.GetTile(new Vector2(Mathf.Round(Random.Range(1, grid.gridWidth - 1)), Mathf.Round(Random.Range(0, grid.gridHeight))));
-        if (!tile.occupied)
+       Tile  targetTile = grid.GetTile(new Vector2(Mathf.Round(Random.Range(1, grid.gridWidth - 1)), Mathf.Round(Random.Range(0, grid.gridHeight))));
+        if (!targetTile.occupied)
         {
             Animal animal = Instantiate(prefab);
             animal.transform.SetParent(tile.transform);
 			animal.transform.localEulerAngles = rotation;
             animal.transform.localPosition = new Vector3(0, 0, 0);
-            tile.SetOccupied(true);
-            tile.SetAnimal(animal);
+            animal.transform.SetParent(targetTile.transform);
+          //  tile.SetOccupied(true);
+            targetTile.SetAnimal(animal);
+          animal.Move(targetTile,0);
         }
         else
         {

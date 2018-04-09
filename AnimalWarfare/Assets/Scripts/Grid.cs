@@ -7,6 +7,7 @@ public class Grid : MonoBehaviour
     public int gridWidth, gridHeight;
     public float tileOffset, tileHeight;
     public Tile prefab;
+    public Tile animalSpawnTile;
     public Tile[,] tiles { get; private set; }
 
     void Awake()
@@ -24,6 +25,7 @@ public class Grid : MonoBehaviour
         }
         Vector3 tilePosition = tiles[gridWidth - 1, gridHeight - 1].transform.position;
         this.transform.position = new Vector3(-(tilePosition.x / 2), 0, -(tilePosition.z / 2));
+        animalSpawnTile.transform.localPosition = new Vector3((tilePosition.x / 2) , 0, -10);
     }
 
     public Tile GetTile(Vector2 position){
