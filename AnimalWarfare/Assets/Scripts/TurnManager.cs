@@ -24,6 +24,8 @@ public class TurnManager : MonoBehaviour
     public int currentPlayerNumber { get; private set; }
     int startingPlayer = 0;
     public AnimalTurnManager animalTurnManager;
+    public GameObject player1Win;
+    public GameObject player2Win;
 
     void Start()
     {
@@ -61,6 +63,16 @@ public class TurnManager : MonoBehaviour
     public void EndTurn()
     {
         Tile tile = animalTurnManager.GetNextAnimal().GetComponentInParent<Tile>();
+
+        if (leftHero.isDead)
+        {
+            player2Win.SetActive(true);
+        }
+        else if(rightHero.isDead)
+        {
+            player1Win.SetActive(true);
+        }
+        
         selection.SetCurrentSelection(tile);
 
         currentPlayer.gameObject.SetActive(false);
