@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44824654, g: 0.49827242, b: 0.5755816, a: 1}
+  m_IndirectSpecularColor: {r: 0.44824702, g: 0.49827307, b: 0.575583, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -2966,7 +2966,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridWidth: 15
   gridHeight: 9
-  tileOffset: 0.005
+  tileOffset: 0
   tileHeight: 0.25
   prefab: {fileID: 114735855893426766, guid: 31845d647f20cf04497f88b4b515319a, type: 2}
   animalSpawnTile: {fileID: 215273843}

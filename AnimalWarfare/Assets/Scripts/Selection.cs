@@ -36,22 +36,23 @@ public class Selection : MonoBehaviour
         }
     }
 
-    public void OnMouseClick(bool button){
+    public void OnMouseClick(bool button)
+    {
         Debug.Log("Click");
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-            if (Physics.Raycast(ray, out hit))
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit))
+        {
+            if (hit.collider.GetComponentInParent<Tile>())
             {
-                if (hit.collider.GetComponentInParent<Tile>())
+                if (newSelection == null)
                 {
-                    if (newSelection == null)
-                    {
-                        Debug.Log("Click new");
-                        newSelection = hit.collider.GetComponentInParent<Tile>();
-                        OnNewSelection(button);
-                    }
+                    Debug.Log("Click new");
+                    newSelection = hit.collider.GetComponentInParent<Tile>();
+                    OnNewSelection(button);
                 }
             }
+        }
     }
     public void OnCurrentSelection()
     {
@@ -98,19 +99,23 @@ public class Selection : MonoBehaviour
             {
                 if (!newSelection.animal.hero)
                 {
-                    if (grid.GetNeighbours(currentSelection).Contains(newSelection))
+                    if (grid.GetNeighbours(currentSelection).Contains(newSelection)
+                            && newSelection.animal.GetPlayer() == null
+                            && turnManager.currentPlayer.animalCount < 3)
                     {
                         switch (turnManager.currentPlayer.playerId)
                         {
                             case 1:
-                                newSelection.animal.GetComponentInChildren<Renderer>().material.color = Color.red;
+                                newSelection.animal.GetComponentInChildren<Renderer>().material.color = turnManager.currentPlayer.playerColor;
+                                currentSelection.animal.GetPlayer().animalCount++;
                                 newSelection.animal.SetPlayer(turnManager.currentPlayer);
                                 turnManager.EndTurn();
                                 turnManager.animalTurnManager.AddAnimal(newSelection.animal);
                                 DeselectAll();
                                 break;
                             case 2:
-                                newSelection.animal.GetComponentInChildren<Renderer>().material.color = Color.blue;
+                                newSelection.animal.GetComponentInChildren<Renderer>().material.color = turnManager.currentPlayer.playerColor;
+                                currentSelection.animal.GetPlayer().animalCount++;
                                 newSelection.animal.SetPlayer(turnManager.currentPlayer);
                                 turnManager.EndTurn();
                                 turnManager.animalTurnManager.AddAnimal(newSelection.animal);
