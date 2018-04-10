@@ -124,15 +124,25 @@ public class Selection : MonoBehaviour
             }
             else if (!currentSelection.animal.hero)
             {
-                if (newSelection.animal.GetPlayer() == null)
-                {
-                    currentSelection.animal.Attack(normalAttack, newSelection.animal);
-                    turnManager.EndTurn();
-                }
-                else if (newSelection.animal.GetPlayer().playerId != currentSelection.animal.GetPlayer().playerId)
-                {
-                    currentSelection.animal.Attack(normalAttack, newSelection.animal);
-                    turnManager.EndTurn();
+                if(Mathf.RoundToInt(Mathf.Abs((newSelection.position.x + newSelection.position.y) - (currentSelection.position.x + currentSelection.position.y))) <= 1){
+                    if (newSelection.animal.GetPlayer() == null)
+                    {
+                        currentSelection.animal.Attack(normalAttack, newSelection.animal);
+                        newSelection.GetComponent<Selectable>().Deselect();
+                        if(!newSelection.animal.isDead){
+                            newSelection.animal.Move(grid.animalSpawnTile, 0);
+                        }
+                        turnManager.EndTurn();
+                        DeselectAll();
+                    }
+                    else if (newSelection.animal.GetPlayer().playerId != currentSelection.animal.GetPlayer().playerId)
+                    {
+                        currentSelection.animal.Attack(normalAttack, newSelection.animal);
+                        newSelection.GetComponent<Selectable>().Deselect();
+                        if(newSelection.animal.isDead) turnManager.animalTurnManager.RemoveAnimal(newSelection.animal);
+                        turnManager.EndTurn();
+                        DeselectAll();
+                    }
                 }
             }
             newSelection = null;
