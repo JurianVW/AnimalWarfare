@@ -18,6 +18,11 @@ public class AnimalTurnManager : MonoBehaviour
         if(animalQueue.Count > 1)   QueueChange();
     }
 
+    public void RemoveAnimal(Animal animal){
+        animalQueue.Remove(animal);
+        QueueChange();
+    }
+
     public Animal GetStartingAnimal()
     {
         QueueChange();
