@@ -47,9 +47,9 @@ public class Animal : MonoBehaviour {
             }
         } else if (isDead) {
             if (Time.time - deadTime > 10) {
-
-                Vector3 dest = new Vector3 (this.transform.position.x, -10, this.transform.position.z);
-                transform.localPosition = Vector3.MoveTowards (this.transform.localPosition, dest, 0.25f * Time.deltaTime);
+                Vector3 dest = new Vector3 (0, -5, 0);
+                transform.localPosition = Vector3.MoveTowards (this.transform.localPosition, dest, 0.5f * Time.deltaTime);
+                this.GetComponentInParent<Selectable>().Deselect();
                 if (this.transform.localPosition == dest) {
                     Destroy (this.gameObject);
                 }
